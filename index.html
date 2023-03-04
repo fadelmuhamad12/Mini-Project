@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch.Me</title>
+
+    <!-----LINK BOOTSTRAP---->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <!---Link Griffy Fonts---->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Griffy&family=Open+Sans:wght@700&family=Oswald&family=Poppins:wght@100;600&family=Ubuntu&family=Work+Sans:wght@500&display=swap"
+        rel="stylesheet">
+    <!------FONT MONTSERRAT----->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Griffy&family=Montserrat:wght@600;700&family=Open+Sans:wght@700&family=Oswald&family=Poppins:wght@100;600&family=Ubuntu&family=Work+Sans:wght@500&display=swap"
+        rel="stylesheet">
+    <!---LINK CSS---->
+    <link rel="stylesheet" href="style.css">
+
+
+
+
+</head>
+
+<body>
+    <!-----UNTUK NAVBAR----->
+    <nav class="navbar navbar-expand-lg" style="position: sticky; top: 0px; z-index: 2;">
+        <div class="container-fluid" style="padding: 2px 20px;">
+            <a class="navbar-brand" style="margin-left: 20px ; ">
+                Watch.<span style="color: #FFC907;">Me</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation" style="margin-right: 20px">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse custom-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Series</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Movies</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-5 d-flex" type="search" placeholder="Search" aria-label="Search">
+                    <div class="profile">
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEg68sHsSj5uogEfKJdNaMDmazxADnahUz2hIhWpdSmS5VlsHiMQIkNRkWYl1QI6xxecw&usqp=CAU">
+                        <a>Fadel</a>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Alerts -->
+    <!-- <div class="alert alert-dark" role="alert" style="margin: 0px;">
+        Coming Soon, Outer Banks Season 4!<a href="https://www.imdb.com/title/tt10293938/"> Click here</a> to watch
+        trailer
+    </div> -->
+
+
+    <!-- CAROUSEL -->
+    <!-- <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item carousel-image active" data-bs-interval="3000">
+                <div class="highlight-1"></div>
+                <div class="container">
+                    <h1>Outer Banks</h1>
+                    <p>On an island of haves and have-nots, teen John B enlists his three best friends to hunt for a
+                        legendary treasure linked to his father's disappearance.</p>
+                    <a href="https://www.imdb.com/title/tt10293938/" class="btn btn-lg btn-info"> Watch</a>
+                </div>
+
+            </div>
+
+            <div class="carousel-item carousel-image" data-bs-interval="3000">
+                <div class="highlight-2"></div>
+                <div class="container">
+                    <h1>Arrow</h1>
+                    <p>On an island of haves and have-nots, teen John B enlists his three best friends to hunt for a
+                        legendary treasure linked to his father's disappearance.</p>
+                    <a href="https://www.imdb.com/title/tt10293938/" class="btn btn-lg btn-info"> Watch</a>
+                </div>
+            </div>
+            <div class="carousel-item carousel-image" data-bs-interval="3000">
+                <div class="highlight-3"></div>
+                <div class="container">
+                    <h1>The Last Of Us</h1>
+                    <p>On an island of haves and have-nots, teen John B enlists his three best friends to hunt for a
+                        legendary treasure linked to his father's disappearance.</p>
+                    <a href="https://www.imdb.com/title/tt10293938/" class="btn btn-lg btn-info"> Watch</a>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev"
+            style="height: 100px; margin-top: 44vh;">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next"
+            style="height: 100px; margin-top: 44vh;">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div> -->
+
+    <!----- Cards ----->
+
+
+    <div class="coverall">
+        <h4 class="option">Favorit</h4>
+        <div style="margin-top: 10px;" class="container-fluid d-flex col-12 col-md-6 col-lg-4 col-xl-2 ">
+            <div class="col-12 col-md-6 col-lg-4 col-xl-2">
+                <div class="card" style="background: none; border: none;">
+                    <img src="https://image.tmdb.org/t/p/w185/pqzjCxPVc9TkVgGRWeAoMmyqkZV.jpg" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <h1 class="title">Hawk Eye</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 col-xl-2">
+                <div class="card" style=" background: none; border: none;">
+                    <img src="https://image.tmdb.org/t/p/w185/uKvVjHNqB5VmOrdxqAt2F7J78ED.jpg" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <h1 class="title">The Last Of Us</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 col-xl-2">
+                <div class="card" style="background: none; border: none;">
+                    <img src="https://image.tmdb.org/t/p/w185/ovDgO2LPfwdVRfvScAqo9aMiIW.jpg" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <h1 class="title">Outer Banks</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 col-xl-2">
+                <div class="card" style="  background: none; border: none;">
+                    <img src="https://image.tmdb.org/t/p/w185/jeGtaMwGxPmQN5xM4ClnwPQcNQz.jpg" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <h1 class="title">Wednesday</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 col-xl-2">
+                <div class="card" style="  background: none; border: none;">
+                    <img src="https://image.tmdb.org/t/p/w185/xf9wuDcqlUPWABZNeDKPbZUjWx0.jpg" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <h1 class="title">The Walking Dead</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 col-xl-2">
+                <div class="card" style=" background: none; border: none;">
+                    <img src="https://image.tmdb.org/t/p/w185/ut4PhX7OP2l2oJhrIUYWnt9pnQU.jpg" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <h1 class="title">The Boys</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <h4 class="option">Favorit Anda</h4>
+        
+        <div style="margin-top: 10px;" class="container-fluid d-flex gap-5 justify-content-center">
+            <div class="card" style="width: 10rem;  background: none; border: none;" >
+                <img src="https://image.tmdb.org/t/p/w185/pqzjCxPVc9TkVgGRWeAoMmyqkZV.jpg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h1 class="title">Hawk Eye</h1>
+                </div>
+            </div>
+
+            <div class="card" style="width: 10rem;  background: none; border: none;">
+                <img src="https://image.tmdb.org/t/p/w185/uKvVjHNqB5VmOrdxqAt2F7J78ED.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h1 class="title">The Last Of Us</h1>
+                 
+                </div>
+            </div>
+
+            <div class="card" style="width: 10rem; background: none; border: none;">
+                <img src="https://image.tmdb.org/t/p/w185/ovDgO2LPfwdVRfvScAqo9aMiIW.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h1 class="title">Outer Banks</h1>
+                </div>
+            </div>
+
+            <div class="card" style= "width: 10rem;  background: none; border: none;" >
+                <img src="https://image.tmdb.org/t/p/w185/jeGtaMwGxPmQN5xM4ClnwPQcNQz.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h1 class="title">Wednesday</h1>
+                
+                </div>
+            </div>
+            <div class="card" style= "width: 10rem;  background: none; border: none;">
+                <img src="https://image.tmdb.org/t/p/w185/xf9wuDcqlUPWABZNeDKPbZUjWx0.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h1 class="title">The Walking Dead</h1>
+                    
+                </div>
+            </div>
+            <div class="card" style= "width: 10rem;  background: none; border: none;">
+                <img src="https://image.tmdb.org/t/p/w185/ut4PhX7OP2l2oJhrIUYWnt9pnQU.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h1 class="title">The Boys</h1>
+                </div>
+            </div>
+        </div>
+
+        <h4 class="option">Favorit Anda</h4>
+        
+        <div style="margin-top: 10px;" class="container-fluid d-flex gap-5 justify-content-center">
+            <div class="card" style="width: 10rem;  background: none; border: none;" >
+                <img src="https://image.tmdb.org/t/p/w185/pqzjCxPVc9TkVgGRWeAoMmyqkZV.jpg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h1 class="title">Hawk Eye</h1>
+                </div>
+            </div>
+
+            <div class="card" style="width: 10rem;  background: none; border: none;">
+                <img src="https://image.tmdb.org/t/p/w185/uKvVjHNqB5VmOrdxqAt2F7J78ED.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h1 class="title">The Last Of Us</h1>
+                 
+                </div>
+            </div>
+
+            <div class="card" style="width: 10rem; background: none; border: none;">
+                <img src="https://image.tmdb.org/t/p/w185/ovDgO2LPfwdVRfvScAqo9aMiIW.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h1 class="title">Outer Banks</h1>
+                </div>
+            </div>
+
+            <div class="card" style= "width: 10rem;  background: none; border: none;" >
+                <img src="https://image.tmdb.org/t/p/w185/jeGtaMwGxPmQN5xM4ClnwPQcNQz.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h1 class="title">Wednesday</h1>
+                
+                </div>
+            </div>
+            <div class="card" style= "width: 10rem;  background: none; border: none;">
+                <img src="https://image.tmdb.org/t/p/w185/xf9wuDcqlUPWABZNeDKPbZUjWx0.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h1 class="title">The Walking Dead</h1>
+                    
+                </div>
+            </div>
+            <div class="card" style= "width: 10rem;  background: none; border: none;">
+                <img src="https://image.tmdb.org/t/p/w185/ut4PhX7OP2l2oJhrIUYWnt9pnQU.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h1 class="title">The Boys</h1>
+                </div>
+            </div>
+        </div>
+
+        <h4 class="option">Favorit Anda</h4>
+        
+        <div style="margin-top: 10px;" class="container-fluid d-flex gap-5 justify-content-center">
+            <div class="card" style="width: 10rem;  background: none; border: none;" >
+                <img src="https://image.tmdb.org/t/p/w185/pqzjCxPVc9TkVgGRWeAoMmyqkZV.jpg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h1 class="title">Hawk Eye</h1>
+                </div>
+            </div>
+
+            <div class="card" style="width: 10rem;  background: none; border: none;">
+                <img src="https://image.tmdb.org/t/p/w185/uKvVjHNqB5VmOrdxqAt2F7J78ED.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h1 class="title">The Last Of Us</h1>
+                 
+                </div>
+            </div>
+
+            <div class="card" style="width: 10rem; background: none; border: none;">
+                <img src="https://image.tmdb.org/t/p/w185/ovDgO2LPfwdVRfvScAqo9aMiIW.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h1 class="title">Outer Banks</h1>
+                </div>
+            </div>
+
+            <div class="card" style= "width: 10rem;  background: none; border: none;" >
+                <img src="https://image.tmdb.org/t/p/w185/jeGtaMwGxPmQN5xM4ClnwPQcNQz.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h1 class="title">Wednesday</h1>
+                
+                </div>
+            </div>
+            <div class="card" style= "width: 10rem;  background: none; border: none;">
+                <img src="https://image.tmdb.org/t/p/w185/xf9wuDcqlUPWABZNeDKPbZUjWx0.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h1 class="title">The Walking Dead</h1>
+                    
+                </div>
+            </div>
+            <div class="card" style= "width: 10rem;  background: none; border: none;">
+                <img src="https://image.tmdb.org/t/p/w185/ut4PhX7OP2l2oJhrIUYWnt9pnQU.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h1 class="title">The Boys</h1>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,178 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+/* NAVBAR */
+.navbar{
+    background: linear-gradient(90.53deg, rgba(0, 0, 0, 0.75) 0.45%, rgba(102, 80, 165, 0.75) 105.51%); 
+    /* height: 93px; */
+}
+/* .container-fluid{
+    padding:2px 20px;
+
+} */
+a.navbar-brand, .navbar-brand > span {
+    font-family: "Griffy";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 49px;
+}
+.nav-item a:hover{
+    color: #FFC907;
+}
+.form-control, me-5{
+    height: 5vh;
+    margin-top: 4.5%;
+}
+.profile{
+    margin-top: 10px;
+}
+
+.profile img {
+    width: 45px;
+ 
+}
+.profile a {
+    font-size: 15px;
+    margin-left: 2px;
+}
+/* NAVBAR END */
+
+/* UNTUK CAROUSEL */
+.highlight-1{
+    height:90vh;
+    position: relative;
+    background-image: url(pogue.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.highlight-2{
+    height: 90vh;
+    position: relative;
+    background-image: url(http://www.zupimages.net/up/17/41/5tnc.jpg);
+     background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.highlight-3{
+    height: 90vh;
+    position: relative;
+    background-image: url(https://cdn.mos.cms.futurecdn.net/dEKSDf7UxuAD5iuUePzLMJ.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container{
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-bottom: 5vh;
+}
+.container h1{
+    color: #FFC907;
+    
+}
+
+.container p{
+    color: white;
+    
+}
+
+button.arousel-control-prev{
+    height: 100px;
+    margin-top: 44vh;
+}
+/*  CAROUSEL End */
+
+/* Untuk Cards */
+
+.coverall{
+    background: linear-gradient(90.53deg, rgba(0, 0, 0, 0.75) 0.45%, rgba(102, 80, 165, 0.75) 105.51%); 
+    padding: 15px ;
+}
+
+.card-body .title{
+    color: #FFC907 ;
+    font-size: 17px;
+    text-align: center;
+}
+
+.container-fluid .card{
+    max-width: 170px;
+    
+}
+
+.option{
+    padding-left: 5px;
+    margin-left: 1%;
+    color: #FFC907;
+    border: 3px solid #FFC907;
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+}
+.coverall-2{
+    background: linear-gradient(90.53deg, rgba(0, 0, 0, 0.75) 0.45%, rgba(102, 80, 165, 0.75) 105.51%); 
+    padding: 15px;
+}
+
+/* MEDIA QUERY */
+
+/* box-shadow: 4px 4px #d8d8d8 */
+@media screen and (max-width: 992px){
+    .nav-link.active{
+        margin-top: 3vh;
+    }
+    .nav-item  a{
+        color: aliceblue;
+    }
+    .profile{
+        display: none;
+    }
+    .form-control{
+        margin-top: 0;
+    }
+    .highlight-3{
+        height: 100vh;
+        width: 100%;
+        position: relative;
+        background-image: url(https://cdn.mos.cms.futurecdn.net/dEKSDf7UxuAD5iuUePzLMJ.jpg);
+        background-size:cover;
+        background-position: right;
+        
+    }
+    /* .custom-collapse {
+        z-index: 2;
+        background: linear-gradient(90.53deg, rgba(0, 0, 0, 0.75) 0.45%, rgba(102, 80, 165, 0.75) 105.51%);
+        padding: 10px;
+    } */
+
+    .card-body .title{
+        color: #FFC907 ;
+        font-size: 15px;
+        
+    }
+
+
+}
+@media screen and (max-width: 768px){
+
+    }
+
+
+@media screen and (max-width: 576px){
+    .highlight-3{
+        height: 100vh;
+        width: 100%;
+        position: relative;
+        background-image: url(https://cdn.mos.cms.futurecdn.net/dEKSDf7UxuAD5iuUePzLMJ.jpg);
+        background-size:cover;
+        background-position: right;
+    }
+}
