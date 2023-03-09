@@ -63,8 +63,8 @@ a.navbar-brand, .navbar-brand > span {
 .highlight-3{
     height: 90vh;
     position: relative;
-    background-image: url(https://img1.hotstarext.com/image/upload/f_auto/sources/r1/cms/prod/808/1050808-h-0c5fae3a7f59);
-    background-position: top;
+    background-image: url(https://wallpapers.com/images/featured/segtwbhffwy01w82.jpg);
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -93,6 +93,9 @@ a.navbar-brand, .navbar-brand > span {
     background-color: #152951;
     padding-top: 30px;
 }
+.card img{
+    border-radius: 5%;
+}
 
 .list{
     padding-left: 5px;
@@ -106,6 +109,7 @@ a.navbar-brand, .navbar-brand > span {
 
 .card-title{
     color: #FFAC42;
+    text-align: center;
     /* color: #FFC907; */
 }
 .card:hover{
@@ -146,8 +150,91 @@ a.navbar-brand, .navbar-brand > span {
     
 }
 
+     /*------------- MODAL---------------*/
+    .modal-content{
+        background: linear-gradient(90.53deg, rgba(0, 0, 0, 0.75) 0.45%, rgba(119, 119, 119, 0.75) 105.51%);  
+        background-color: grey;
+    }
 
+     .modal-header{
+         display:flex;
+         flex-direction: column;
+     }
+     .modal-header .modal-title{
+         margin-left: auto;
+         margin-right: auto;
+         color: black;
+         font-weight: bold;
+     }
 
+     .modal-header .rating {
+         display: flex;
+         margin-top: 10px;
+        
+     }
+     .modal-header .rating p {
+        margin-left: 5px;
+        margin-top: -2px;
+        font-weight: bold;
+        color: black;
+     }
+    .kontainer .foto img{
+        margin-top: 10px;
+        width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        
+    }
+
+    .kontainer .judul{
+        font-weight: bold;
+        text-align: center;
+        color: black;
+    }
+    .kontainer .genre{
+        display: flex;
+        padding: 20px;
+        justify-content: space-around;
+        
+
+    }
+    .kontainer .genre p{
+        color: black;
+    }
+    .kontainer .genre .satu{
+        border: 3px solid black;
+        border-radius: 5px;
+        padding: 2px;
+    }
+    .kontainer .genre .dua{
+        border: 3px solid black;
+        border-radius: 5px;
+        padding: 2px;
+    }
+    .kontainer .genre .tiga{
+        border: 3px solid black;
+        border-radius: 5px;
+        padding: 2px;
+    }
+  
+    .kontainer .plot {
+        text-align: left;
+        color: #FFAC42;;
+        
+    }
+    .kontainer button {
+        display: flex;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .btn-close{
+        position: relative;
+    margin-left: 450px;
+    margin-top: 10px;
+    }
+    /*------------- MODAL END---------------*/
 
 /* media query */
 @media screen and (max-width: 1400px){
@@ -157,11 +244,15 @@ a.navbar-brand, .navbar-brand > span {
      }
 }
 
-@media screen and (max-width: 1400px){
+@media screen and (max-width: 1200px){
     .container-judul {
         padding: 40% 0 0 6%;
          
      }
+
+     .card-title{
+        font-size: 17px;
+    }
 }
 
 
@@ -195,6 +286,15 @@ a.navbar-brand, .navbar-brand > span {
         padding: 70% 0 0 6%;
          
      }
+     .highlight-2{
+        height: 90vh;
+        position: relative;
+        background-image: url(https://images5.alphacoders.com/116/1163146.jpg);
+        background-position:right;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+  
 }
 
 @media screen and (max-width: 576px){
@@ -203,5 +303,38 @@ a.navbar-brand, .navbar-brand > span {
     
          
      }
+     .card-title{
+         font-size: 15px;
+     }
+     video{
+         width:410px;
+         margin-left: auto;
+         margin-right: auto;
+        
+         display: flex;
+     }
+}
 
+@media screen and (max-width: 450px){
+    .container-judul h1 {
+        padding: 30% 0 0 0;
+        font-size: 25px;    
+        text-align: left;
+         
+     }
+
+     video{
+        width:320px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+    }
+
+     .container-judul p {
+        font-size: 15px;    
+         
+     }
+     .card-title{
+         font-size: 12px;
+     }
 }
