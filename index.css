@@ -1,0 +1,627 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+/* NAVBAR */
+.navbar {
+    /* background: linear-gradient(90.53deg, rgba(0, 0, 0, 0.75) 0.45%, rgba(102, 80, 165, 0.75) 105.51%); */
+    /* background: linear-gradient(50.53deg, #1a1a1a 0.45%, rgba(193, 193, 197, 0.75) 80.51%,);  */
+    /* background: linear-gradient(90.53deg, rgba(0, 0, 0, 0.75) 0.45%, rgba(119, 119, 119, 0.75) 105.51%);   */
+    /* background-color: #1a1a1a; */
+    /* background: #1d1d2b; */
+    background: linear-gradient(179.71deg, #273343 0.25%, #161E29 84.69%);
+}
+
+a.navbar-brand,
+.navbar-brand>span {
+   
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 49px;
+    
+}
+
+.nav-item a{
+    color: rgb(90, 90, 90);;
+}
+
+
+.nav-item a:hover {
+    color: #FFC907;
+    /* color: #FFC907; */
+}
+
+.form-control,
+me-5 {
+    height: 5vh;
+    margin-top: 4.5%;
+
+}
+
+.profile {
+    margin-top: 10px;
+    color: #FFC907;
+}
+
+.profile img {
+    width: 45px;
+
+}
+
+
+/* UNTUK CAROUSEL */
+.highlight-1 {
+    height: 90vh;
+    position: relative;
+    background-image: url(https://cdn.mos.cms.futurecdn.net/dEKSDf7UxuAD5iuUePzLMJ.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.highlight-2 {
+    height: 90vh;
+    position: relative;
+    background-image: url(https://images5.alphacoders.com/116/1163146.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.highlight-3 {
+    height: 90vh;
+    position: relative;
+    background-image: url(https://wallpapers.com/images/featured/segtwbhffwy01w82.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container-judul {
+    padding: 30% 0 0 6%;
+
+}
+
+.container-judul h1 {
+    color: #FFC907;
+    /* color: #FFAC42; */
+    letter-spacing: 5px;
+}
+
+.container-judul p {
+    color: white;
+}
+
+
+/* Untuk cards */
+.fullcover {
+    /* background: linear-gradient(90.53deg, rgba(0, 0, 0, 0.75) 0.45%, rgba(102, 80, 165, 0.75) 105.51%);  */
+    /* background: linear-gradient(90.53deg, rgba(0, 0, 0, 0.75) 0.45%, rgba(119, 119, 119, 0.75) 105.51%);
+    /* background-color: #1a1a1a; */
+    /* background: linear-gradient(90.53deg, rgba(0, 0, 0, 0.75) 0.45%, rgba(193, 193, 197, 0.75) 105.51%);  */
+    /* background-color: #152951; */ 
+    background: linear-gradient(179.71deg, #273343 0.25%, #161E29 84.69%);
+    padding-top: 30px;
+}
+.bread{
+    background: linear-gradient(179.71deg, #273343 0.25%, #161E29 84.69%);
+    text-decoration: none;
+    margin-bottom: 0px;
+}
+.breadcrumb{
+    margin-bottom: 0px;
+  
+}
+.first-title{
+    display: flex;
+    justify-content: space-between;
+}
+
+.first-title .second-list{
+    margin-right: 12%;
+    color: #FFC907;
+    /* color: #FFAC42; */
+    text-decoration: none;
+    font-size: 15px;
+}
+
+
+.card img {
+    border-radius: 5%;
+}
+
+.list {
+    padding-left: 5px;
+    margin-left: 5%;
+    color: #FFC907;
+    /* color: #FFAC42; */
+    border: 3px solid #FFAC42;;
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+}
+
+
+.card-title {
+    color: #FFC907;
+    /* color: #FFAC42; */
+    text-align: center;
+    /* color: #FFC907; */
+}
+
+.card:hover {
+    text-shadow: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    z-index: 2;
+
+}
+/* FORM */
+
+ .msg{
+    display: flex;
+    padding-right: 5px;
+    margin: 20px 0 0 5%;
+    color: #FFC907;;
+  
+}
+
+.formsubs {
+   margin-left: 10px;
+
+}
+.feedback {
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 24px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(77, 77, 77);
+    margin-top: 10px;
+
+}
+
+.contactus {
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 24px;
+    margin-left: auto;
+    margin-right: auto;
+   
+    margin-top: 10px;
+}
+
+
+/* Contact Form */
+
+
+/*------------- MODAL---------------*/
+.modal-content {
+    /* background: linear-gradient(90.53deg, rgba(0, 0, 0, 0.75) 0.45%, rgba(119, 119, 119, 0.75) 105.51%);   */
+    background-color:  rgba(22, 30, 41, 1);
+}
+
+.modal-header {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-header .modal-title {
+    margin-left: auto;
+    margin-right: auto;
+    /* color: rgb(90, 90, 90); */
+    color: white;
+    font-weight: bold;
+}
+
+.modal-header .rating {
+    display: flex;
+    margin-top: 10px;
+
+}
+
+.modal-header .rating p {
+    margin-left: 5px;
+    margin-top: -2px;
+    font-weight: bold;
+    /* color: black; */
+    color: white;
+    /* color: rgb(90, 90, 90); */
+}
+
+.kontainer .foto img {
+    margin-top: 10px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+
+}
+
+.kontainer .genre {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+
+}
+
+.kontainer .genre p {
+    /* color: black; */
+    font-size: 10px;
+    color: white;
+}
+
+.kontainer .genre .satu {
+
+    padding: 2px;
+}
+
+.kontainer .genre .dua {
+    border: 1px solid white;
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
+   
+    padding: 2px;
+}
+
+.kontainer .genre .tiga {
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.kontainer .plot {
+    margin-top: 5px;
+    text-align: justify;
+    font-size: 13px;
+    font-weight: normal;
+    /* color: #FFAC42; */
+    color: white;
+
+}
+
+.kontainer button {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-close {
+    position: relative;
+    margin-left: 450px;
+    margin-top: 10px;
+}
+.season{
+    padding-left: 2%;
+  
+}
+
+.episode{
+    justify-content: center;
+    text-decoration: none;
+    font-size: 13px;
+    margin-left: 25px;
+}
+
+/* 
+.kontainer .cast {
+    display: flex;
+    justify-content: center;
+
+}
+
+.cast{
+    margin-bottom: 20px;
+}
+.list-cast {
+    justify-content: center;
+}
+
+.cast1 {
+    margin: 0 10px;
+    border: 1px solid ;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+
+}
+
+.cast2 {
+    margin: 0 10px;
+    border: 1px solid ;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+
+}
+
+.cast3 {
+    margin: 0 10px;
+    border: 1px solid ;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+
+} */
+
+/* FOOTER */
+
+.footer{
+    height: auto;
+    width: 100vw;
+    padding-top: 40px;
+    color: white;
+}
+.footer-content{
+    background-color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content  h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+    color: black;
+
+}
+.footer-content p {
+    max-width: 500px;
+    margin:10px auto;
+    line-height:  28px;
+    font-size: 14px;
+    color: white;
+}
+
+.socials{
+    list-style:none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.socials li {
+    margin: 0 10px;
+
+}
+.socials a{
+    text-decoration: none;
+    color: white;
+}
+
+.socials a i {
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+
+.soicals a:hover i{
+    color:aqua;
+}
+.footer-bottom {
+    background: black;
+    width:100vw;
+    padding:20px 0;
+    text-align: center;
+}
+.footer-bottom p {
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.footer-bottom span {
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+
+/* END FOOTER */
+
+
+
+
+/* media query */
+@media screen and (max-width: 1400px) {
+    .container-judul {
+        padding: 35% 0 0 6%;
+
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .container-judul {
+        padding: 40% 0 0 6%;
+
+    }
+
+    .card-title {
+        font-size: 17px;
+    }
+}
+
+
+
+@media screen and (max-width: 992px) {
+    .nav-link.active {
+        margin-top: 3vh;
+    }
+
+    .nav-item a {
+        color: aliceblue;
+    }
+
+    .profile {
+        display: none;
+
+    }
+
+    .form-control {
+        margin-top: 0;
+
+    }
+
+    .container-judul {
+        padding: 50% 0 0 6%;
+
+    }
+
+    .highlight-1 {
+        background-position: right;
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .container-judul {
+        padding: 70% 0 0 6%;
+
+    }
+
+    .highlight-2 {
+        height: 90vh;
+        position: relative;
+        background-image: url(https://images5.alphacoders.com/116/1163146.jpg);
+        background-position: right;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .custom-toggler.navbar-toggler {
+        border-color: lightgreen;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    .container-judul {
+        padding: 85% 0 0 6%;
+
+
+    }
+
+    .card-title {
+        font-size: 15px;
+    }
+
+    .modal-dialog{
+    width: 90%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding: 45;
+    margin: 26px;
+
+    }
+    video {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+
+        display: flex;
+    }
+
+    
+}
+
+@media screen and (max-width: 450px) {
+    .container-judul h1 {
+        padding: 30% 0 0 0;
+        font-size: 25px;
+        text-align: left;
+
+    }
+
+    video {
+        width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+    }
+    .modal-dialog{
+        width: 85%;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        
+        margin: 26px;
+    
+        }
+
+    .container-judul p {
+        font-size: 15px;
+
+    }
+
+    .card-title {
+        font-size: 12px;
+    }
+    .season{
+        padding: 5px;
+    }
+    .season .episode{
+        font-size: 10px;
+        justify-content: center;
+        display: flex;
+        align-items: center
+    }
+    .col-4 img{
+        justify-content: space-between;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .container-judul h1 {
+        padding: 30% 0 0 0;
+        font-size: 25px;
+        text-align: left;
+
+    }
+
+    video {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+    }
+    .modal-dialog{
+        width: 85%;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        
+        margin: 26px;
+    
+        }
+
+    .container-judul p {
+        font-size: 15px;
+
+    }
+
+    .card-title {
+        font-size: 12px;
+    }
+    
+}
+@media screen and (max-width: 375px) {
+.container-judul h1 {
+    padding: 10% 0 0 0;
+    font-size: 25px;
+    text-align: left;
+
+}
+}

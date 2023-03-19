@@ -5,14 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Watch.Me</title>
+    <title>F2k.Movies</title>
+    <!-- FavICon -->
+   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
-    <!-----LINK BOOTSTRAP---->
+    <!-- Font AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
+
     <!---Link Griffy Fonts---->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,23 +31,20 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Griffy&family=Montserrat:wght@600;700&family=Open+Sans:wght@700&family=Oswald&family=Poppins:wght@100;600&family=Ubuntu&family=Work+Sans:wght@500&display=swap"
         rel="stylesheet">
-    <!---LINK CSS---->
-    <link rel="stylesheet" href="style.css">
-
-
-
-
+    <!-- LINK CSS -->
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
+
     <!-----UNTUK NAVBAR----->
     <nav class="navbar navbar-expand-lg" style="position: sticky; top: 0px; z-index: 2;">
         <div class="container-fluid" style="padding: 2px 20px;">
-            <a class="navbar-brand" style="margin-left: 20px ; ">
-                Watch.<span style="color: #FFC907;">Me</span></a>
+            <a class="navbar-brand" style="margin-left: 20px; color: rgb(0, 0, 0); ">
+                F2k.<span style=" color: #FFC907;">Stream</span></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation" style="margin-right: 20px">
+                aria-label="Toggle navigation" style="margin-right: 20px; border-color: #FFC907;">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse custom-collapse" id="navbarSupportedContent">
@@ -50,13 +53,24 @@
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Series</a>
+                        <a class="nav-link" href="series.html">Series</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Movies</a>
+                        <a class="nav-link" href="movies.html">Movies</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="movies.html" data-bs-target="#modalForm"
+                            data-bs-toggle="modal">Premium+</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="movies.html" data-bs-target="#modalcontact"
+                            data-bs-toggle="modal">Contact Us</a>
+                    </li>
+
+                    
                 </ul>
                 <form class="d-flex" role="search">
+                 
                     <input class="form-control me-5 d-flex" type="search" placeholder="Search" aria-label="Search">
                     <div class="profile">
                         <img
@@ -69,43 +83,1339 @@
         </div>
     </nav>
 
+
+    <!-- Modal -->
+    <!-- The Last Of us -->
+    <div class="modal fade" id="modalthelastofus" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">The Last of Us</h1>
+                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                    <div class="rating">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="yellow"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <p>9.3/10</p>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="kontainer">
+                        <video controls autoplay muted class="video" width="470px" style="border-radius: 15px;">
+                            <source
+                                src="https://imdb-video.media-imdb.com/vi3368993817/1434659607842-pgv4ql-1678082247365.mp4?Expires=1678978856&Signature=DOOyhEQHRpfzODyZtpB8-JOqaj~d4PEEXKqUOFqK2Htwa0asprp3qvIOEvUCxvgutFQHsQzL34zUUfaZ-h53Xk-GHY9t3C~xBCmBdEuGfnoupe2iFvdYZ-AVRdrtTBQYqciIfQG7nuyzcFCsgVk-YbuY1hrs19vtuUQGgsytAkmr09H9cz7AE2EBTeAZq8qQXXgIkbggPDEqkSOtzp4KFEBrIRpq5frffLtun7JtMqwJXSsRtZwBdvI25PDsdkftd6h8y9CDBiVCXBLb97oyi6SFmShzddLCsFMRswnuEzzZ6pV-2-RgVL4pSwBCeryO8EjlwZpYD0lXNacHHd5HEA__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA"
+                                type="video/mp4">
+                        </video>
+                        <div class="genre">
+                            <p class="satu">Action, Crime, Drama | English | 1 Season</p>
+                            <!-- <p class="dua">Crime</p>
+                            <p class="tiga">Drama</p> -->
+                        </div>
+                        <div class="summary" style="color: white;">Summary</div>
+                        <p class="plot">After a global pandemic destroys civilization, a hardened survivor takes charge
+                            of a 14-year-old girl who may be humanity's last hope.</p>
+                        <hr style="color: white;">
+                        <div class="btn-group">
+                            <button type="button" class="btn" data-bs-toggle="dropdown"
+                                aria-expanded="false" style="color: white;">
+                                Season 1
+                            </button>
+                        </div>
+
+                        <div class="season d-flex">
+                            <div class="row">
+                                <div class="col-4">
+                                    <a href="https://www.imdb.com/title/tt13443470/?ref_=ttep_ep_tt">
+                                    <div class="season1">
+                                        <a style="color: white;">
+                                        </a> <img
+                                            src="https://hips.hearstapps.com/hmg-prod/images/last-of-us-episode-1-pedro-1673367960.jpeg?crop=0.834xw:0.834xh;0.128xw,0.138xh&resize=1200:*"
+                                            style="width: 90%; height: 74px; border-radius: 10px;">
+                                        <a class="episode" style="color: white;">Episode 1</a>
+                                    </a>
+                                    </div>
+                               
+                                </div>
+                                <div class="col-4">
+                                    <div class="season2 ">
+                                        <a style="color: white;">
+                                        </a> <img
+                                            src="https://www.cnet.com/a/img/resize/a76c9e8edbb7c6629abdfdaba6a3ed4cd88da0d2/hub/2023/01/20/d5c8a555-f5cc-4a60-8a97-cb2a8c30391a/anna-torv-1.jpg?auto=webp&width=1200"
+                                            style="width: 90%; height: 74px; border-radius: 10px;">
+                                        <a class="episode" style="color: white;">Episode 2</a>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="season3">
+                                        <a style="color: white;">
+                                        </a> <img
+                                            src="https://www.cnet.com/a/img/resize/3c50c4903918fca17ca2dbbae0128717bc8ae252/hub/2023/01/27/91d88122-7029-4f63-ab94-15dabd31d392/nick-offerman-2.jpg?auto=webp&fit=crop&height=900&width=1200"
+                                            style="width: 90%; height: 74px; border-radius: 10px;">
+                                        <a class="episode" style="color: white;">Episode 3</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Peaky Blinders-->
+    <div class="modal fade" id="modalpeaky" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Peaky Blinders</h1>
+                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                    <div class="rating">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="yellow"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <p>8.8/10</p>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="kontainer">
+                        <video controls autoplay muted class="video" width="470px" style="border-radius: 15px;">
+                            <source
+                                src="https://imdb-video.media-imdb.com/vi305577241/1434659607842-pgv4ql-1554829367736.mp4?Expires=1678731617&Signature=GvSd8uaMYdzw194uXx2TOYtB6ugBx257cICwSdRZgXFkHmsuCjOGt6N5vi0Hv7uJcbGcMzdE5dmBMWJ2FEaJrOCDQOUSLB6blIzTYsNrwz9EJ8FWyMO-OZrZ0kpnhVnK-fKDt6ta0rPsjgKw7DMrs-rMYMSD7FV6zxLiw1NlchYLd-0GGYUUrGNlmfkg3eyymzjIpnRGptI33JXH2zPqk~dC1DSze8BQR60Fw8dsk7RqtiTkr52DKsNsKVzS9rupCpl~qL~n~T-lHm~TyL7ST1F1Ln89nji00vFkyhualK5IxA7BHrXGzKprISqtqEK0obklfU0xhJicyKuzpat5gw__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA"
+                                type="video/mp4">
+                        </video>
+                        <div class="genre">
+                            <p class="satu">Drama</p>
+                            <p class="dua">Crime</p>
+
+                        </div>
+                        
+                        <p class="plot">A gangster family epic set in 1900s England, centering on a gang who sew razor
+                            blades in the peaks of their caps, and their fierce boss Tommy Shelby.</p>
+                        <button type="button" class="btn btn-info">Watch Here</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Stranger Things -->
+    <div class="modal fade" id="modalobx" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Stranger Things</h1>
+                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                    <div class="rating">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="yellow"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <p>8.7/10</p>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="kontainer">
+                        <video controls autoplay muted class="video" width="470px" style="border-radius: 15px;">
+                            <source
+                                src="https://imdb-video.media-imdb.com/vi3269313049/1434659607842-pgv4ql-1655820721427.mp4?Expires=1678903861&Signature=sxHDw--2s4zNbC1IjTbitwJZJUD7vXNz0bHHz15HcCFEUYJ9TBzZNV9CZSCQ0ooBiy7zEg9NRqMFzUIbYXivZ51leTN7sZFF7WCSbgYCocT6Ve5KN1VeHT4kTG-eapp0A4E1ufw8Tv~PblDVmc8Mq77k8sJS-g3daIOWEGCtZJtuN1l3A8maC3dm5Ktu-Y9xoh45GW1JCDNq~RHJO8pwZzzed88XDgQcl6gjDMKPBp10m1QbjguA-gn4g0c0HjX5ZHGk0lTnlMi~AAILSLlHEIbRXxG0Ic1JFSNQ-3steHaWX4nozaAY65OExKVAI0FAS3a68djpNnRQ14oVcZfVMA__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA"
+                                type="video/mp4">
+                        </video>
+                        <div class="genre">
+                            <p class="satu">Drama, Fantasy, Drama | English | 4 Season</p>
+                        </div>
+                        <div class="summary" style="color: white;"> Summary
+                            <p class="plot">When a young boy disappears, his mother, a police chief and his friends must
+                                confront terrifying supernatural forces in order to get him back.</p>
+                        </div>
+                       
+                        <hr style="color: white;">
+                            <div class="btn-group">
+                                <button type="button" class="btn" data-bs-toggle="dropdown"
+                                    aria-expanded="false" style="color: white;">
+                                    Season 1
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Season 2</a></li>
+                                    <li><a class="dropdown-item" href="#">Season 3</a></li>
+                                    <li><a class="dropdown-item" href="#">Season 4</a></li>
+                                </ul>
+                            </div>
+                            <div class="season d-flex">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <div class="season1">
+                                            <a style="color: white;">
+                                            </a> <img
+                                                src="https://ucsdguardian.org/wp-content/uploads/2016/08/TV-Review_-Stranger-Things-Image-Courtesy-of-Vox.jpg"
+                                                style="width: 90%; height: 74px; border-radius: 10px;">
+                                            <a class="episode" style="color: white;">Episode 1</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="season2 ">
+                                            <a style="color: white;">
+                                            </a> <img
+                                                src="https://static.onecms.io/wp-content/uploads/sites/6/2017/07/eleven-stranger-things-2000.jpg"
+                                                style="width: 90%; height: 74px; border-radius: 10px;">
+                                            <a class="episode" style="color: white;">Episode 2</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="season3">
+                                            <a style="color: white;">
+                                            </a> <img
+                                                src="https://m.media-amazon.com/images/M/MV5BMTgzMjYzMzQ3NF5BMl5BanBnXkFtZTgwMjY0ODE0OTE@._V1_.jpg"
+                                                style="width: 90%; height: 74px; border-radius: 10px;">
+                                            <a class="episode" style="color: white;">Episode 3</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Squid Game -->
+    <div class="modal fade" id="modalsquidgame" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Squid Game</h1>
+                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                    <div class="rating">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="yellow"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <p>8.0/10</p>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="kontainer">
+                        <video controls autoplay muted class="video" width="470px" style="border-radius: 15px;">
+                            <source
+                                src="https://imdb-video.media-imdb.com/vi2427699993/1434659607842-pgv4ql-1631100525843.mp4?Expires=1678731868&Signature=skgGcKjZ6VOQ1Dug3HEK9hmUrh~nDEIlAHj5TozXkRXStZCehKzOgoXz4tUUdoFQ2loS2MOvCRy011fybqis~JngeA1eVr~8TRdSYJNVHVUcXaecPoQMQd6suYm04MDISpxnA44CqFLkzJcHoZqHy4-s97OW0KUwV5jiKZmA9~VEQDWkSvQaB7BoAY5kM1u50-WyaltsvYM6r98jls-y9J3vmuiqQ9WxZOqzCRDJhbY5tb8Z8NIGi~uk7z1UwFrARSgMP58hfPTGNm6-4bzGjDmMTVgL3c3Ik0goel8I2MsJ7CtnfVDi1GDZ5DLe7C6tCH7Oduy0aJcxQNFFihKoFQ__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA"
+                                type="video/mp4">
+                        </video>
+                        <div class="genre">
+                            <p class="satu">Drama</p>
+                            <p class="dua">Crime</p>
+                            <p class="tiga">Mystery</p>
+                        </div>
+                        <p class="plot">Hundreds of cash-strapped players accept a strange invitation to compete in
+                            children's games. Inside, a tempting prize awaits with deadly high stakes. A survival game
+                            that has a whopping 45.6 billion-won prize at stake.</p>
+                        <button type="button" class="btn btn-info">Watch Here</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- House of Dragon -->
+    <div class="modal fade" id="modalhod" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">House of Dragon</h1>
+                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                    <div class="rating">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="yellow"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <p>8.5/10</p>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="kontainer">
+                        <video controls autoplay muted class="video" width="470px" style="border-radius: 15px;">
+                            <source
+                                src="https://imdb-video.media-imdb.com/vi3634742553/1434659607842-pgv4ql-1666288032861.mp4?Expires=1678732072&Signature=KGjsUlKrw47fsD~BryPcSvDOJAgQAJ0jqRnsBN9rUXuvquthzyXMxkMxcPbOqyAmS4zzwaZcuRKedqW7II6QKOoEXEvC7FxuAkxeFuPiyw-ylAMRtSNLdCVQvmAgLzT2y0FiIB7i1SPkDTiyPbjk22X9wTDV8gM~hEW31f3dC8HiieJlOf8AbWPV~rfeRy1J1257FY-THtoT1pNXnV25iHVoI9Fv7SEXqpYlTJorjJcWOl4sJwmAbSzAYId9rSc7Cwuqa1dBFdYckNsbF3czg31A8aSbq-u74vQ51d7jmpe4WCVHGzBb0QErKk5jBvtO5Z4ewcLV~38g2f0uO8HxPg__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA"
+                                type="video/mp4">
+                        </video>
+                        <div class="genre">
+                            <p class="satu">Action</p>
+                            <p class="dua">Drama</p>
+                            <p class="tiga">Adventure</p>
+                        </div>
+                        <p class="plot">An internal succession war within House Targaryen at the height of its power,
+                            172 years before the birth of Daenerys Targaryen</p>
+                        <button type="button" class="btn btn-info">Watch Here</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Game of Thrones -->
+    <div class="modal fade" id="modalgot" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Game of Thrones</h1>
+                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                    <div class="rating">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="yellow"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <p>9.2/10</p>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="kontainer">
+                        <video controls autoplay muted class="video" width="470px" style="border-radius: 15px;">
+                            <source src="https://imdb-video.media-imdb.com/vi59490329/1434659607842-pgv4ql-1617727182740.mp4?Expires=1678903514&Signature=YHS4nfL36nV-8uBDuDnS9fiL6ll1ajgrqFqj6g0h6oityThS3hX~2MFNHrhN6IliAvVJyMmS7Cm-ouJgFugpOS20zAnFXNtZ6mgSGLNN4a4fU1kMArhkQbW4Uqt1HhlARQQBrBIPOWdZsyFgUUVkpeqbHbn1lhRox2Zz~JmnY-kyxH5ptdekcqqEpyY~QTwH54x0wlY4MNtwWoBSx4XAra2Aw9jsCx5Iz1lNbAzlQt0kXQUA9sJkCXxuJLNg5DPUi7fQ36hCB-YHrch9k7pD8~XdwlnULPbxcKR98YzQAD34u8qvWMUWHJwwI5nXmVZnyurdhFbNWvlZKiuKKlYe8A__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA
+                            " type="video/mp4">
+                        </video>
+                        <div class="genre">
+                            <p class="satu">Drama, Action, Crime | English | 12 Season</p>
+                        </div>
+                        <div class="summary" style="color: white;">Summary</div>
+                        <p class="plot">Nine noble families fight for control over the lands of Westeros, while an
+                            ancient enemy returns after being dormant for millennia.</p>
+                            <hr style="color: white;">
+                            <div class="btn-group">
+                                <button type="button" class="btn" data-bs-toggle="dropdown"
+                                    aria-expanded="false" style="color: white;">
+                                    Season 1
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Season 2</a></li>
+                                    <li><a class="dropdown-item" href="#">Season 3</a></li>
+                                    <li><a class="dropdown-item" href="#">Season 4</a></li>
+                                    <li><a class="dropdown-item" href="#">Season 5</a></li>
+                                    <li><a class="dropdown-item" href="#">Season 6</a></li>
+                                    <li><a class="dropdown-item" href="#">Season 7</a></li>
+                                    <li><a class="dropdown-item" href="#">Season 8</a></li>
+                                    <li><a class="dropdown-item" href="#">Season 9</a></li>
+                                    <li><a class="dropdown-item" href="#">Season 10</a></li>
+                                    <li><a class="dropdown-item" href="#">Season 11</a></li>
+                                    <li><a class="dropdown-item" href="#">Season 12</a></li>
+                                </ul>
+                            </div>
+                            <div class="season d-flex">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <div class="season1">
+                                            <a style="color: white;">
+                                            </a> <img
+                                                src="https://cdn.jwplayer.com/v2/media/EhxA06yR/poster.jpg?width=1920"
+                                                style="width: 90%; height: 74px; border-radius: 10px;">
+                                            <a class="episode" style="color: white;">Episode 1</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="season2 ">
+                                            <a style="color: white;">
+                                            </a> <img
+                                                src="https://uploads.dailydot.com/2019/04/watch_game_of_thrones_season_8_episode_2_free.jpg?q=65&auto=format&w=2270&ar=2:1&fit=crop"
+                                                style="width: 90%; height: 74px; border-radius: 10px;">
+                                            <a class="episode" style="color: white;">Episode 2</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="season3">
+                                            <a style="color: white;">
+                                            </a> <img
+                                                src="https://i.pinimg.com/originals/ae/4c/ab/ae4cabe1ee8e1c0e764513362fa415aa.jpg"
+                                                style="width: 90%; height: 74px; border-radius: 10px;">
+                                            <a class="episode" style="color: white;">Episode 3</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- The Walking Dead -->
+    <div class="modal fade" id="modalthewalkingdead" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">The Last of Us</h1>
+                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                    <div class="rating">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="yellow"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <p>8.1/10</p>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="kontainer">
+                        <video controls autoplay muted class="video" width="470px" style="border-radius: 15px;">
+                            <source
+                                src="https://imdb-video.media-imdb.com/vi2955723289/1434659607842-pgv4ql-1658537360569.mp4?Expires=1678901023&Signature=RO7tzbam91UCWbSm5NTnabHRKq660pN0QCk8L-DAfpeolHE5JmFKkk6BO5A7oxWTluP04StueafHmzzwUkYLrjFJRgCfxfMXuMoXp1qGPqZLlB-1vwShSLZ~3ZBtlIr6wFsAU3eFH3WF9V~8WT7QGuusMW2XSl0u0mulMb8JCYRtK0r0t7tK5KgMKp-fhujXLim0Jh0LuyeVxIvc~sAlDFMbu4NxHJcxQ8W3MlYBECk0Rvzc~3g9-9npW-TU4a4DKjsPv3oLK8SRHM2xNNXMpTUbgf3kqw8wUpUBaKHVaYVAnPIIL63izgXVyHnuVT30d3onxDe17L0tR7zIbG5oxQ__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA"
+                                type="video/mp4">
+                        </video>
+                        <div class="genre">
+                            <p class="satu">Drama, Horror, Thriller | English | 12 Season</p>
+                        </div>
+                        <div class="summary" style="color: white;">Summary</div>
+                        <p class="plot">Sheriff Deputy Rick Grimes wakes up from a coma to learn the world is in ruins
+                            and must lead a group of survivors to stay alive.</p>
+                            <hr style="color: white;">
+                            <div class="btn-group">
+                                <button type="button" class="btn" data-bs-toggle="dropdown"
+                                    aria-expanded="false" style="color: white;">
+                                    Season 1
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Season 2</a></li>
+                                    <li><a class="dropdown-item" href="#">Season 3</a></li>
+                                    <li><a class="dropdown-item" href="#">Season 4</a></li>
+                                    <li><a class="dropdown-item" href="#">Season 5</a></li>
+                                    <li><a class="dropdown-item" href="#">Season 6</a></li>
+                                    <li><a class="dropdown-item" href="#">Season 7</a></li>
+                                    <li><a class="dropdown-item" href="#">Season 8</a></li>
+                                    <li><a class="dropdown-item" href="#">Season 9</a></li>
+                                    <li><a class="dropdown-item" href="#">Season 10</a></li>
+                                    <li><a class="dropdown-item" href="#">Season 11</a></li>
+                                    <li><a class="dropdown-item" href="#">Season 12</a></li>
+                                </ul>
+                            </div>
+                            <div class="season d-flex">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <div class="season1">
+                                            <a style="color: white;">
+                                            </a> <img
+                                                src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_2_5x/sources/r1/cms/prod/9158/569158-h"
+                                                style="width: 90%; height: 74px; border-radius: 10px;">
+                                            <a class="episode" style="color: white;">Episode 1</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="season2 ">
+                                            <a style="color: white;">
+                                            </a> <img
+                                                src="https://undeadwalking.com/files/image-exchange/2016/04/ie_35424.jpeg"
+                                                style="width: 90%; height: 74px; border-radius: 10px;">
+                                            <a class="episode" style="color: white;">Episode 2</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="season3">
+                                            <a style="color: white;">
+                                            </a> <img
+                                                src="https://images2.minutemediacdn.com/image/fetch/c_fill,g_auto,f_auto,h_2133,w_3200/https%3A%2F%2Fshowsnob.com%2Ffiles%2Fimage-exchange%2F2017%2F07%2Fie_90839.jpeg"
+                                                style="width: 90%; height: 74px; border-radius: 10px;">
+                                            <a class="episode" style="color: white;">Episode 3</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 13 Reasons Why -->
+    <div class="modal fade" id="modal13" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">13 Reason Why</h1>
+                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                    <div class="rating">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="yellow"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <p>7.5/10</p>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="kontainer">
+                        <video controls autoplay muted class="video" width="470px" style="border-radius: 15px;">
+                            <source
+                                src="https://imdb-video.media-imdb.com/vi63356441/1434659607842-pgv4ql-1589994136439.mp4?Expires=1678904057&Signature=tQAgTBfr~EfOJs8iJ3z4qfLfoXNpx1Y8kB202SfsNE3aUq7hn383mggyv6czTf4vfepG0vOX0RkWqfd-2xNANQWCIf8eUs4T-GVh8oOXu4PA0yZvNKzJto4OPiHt-EjhUYgXenpRkraV0GnyoL6flQ38ls4Hi89jjjkMwU13dnQB9xH5aZ2xD5e88r4sBD8tGuxAtxSP0iPer4kD-zvcnyQRCLZQ13h5LcLhD7GmFenSjE9TqFn2xKOK6u~noNZvpAMWpsYkxtAb3aPcoZi6MKBtY2SkNsJ-w-R60zephg19fRyRI5NIbFMFMqOM5DDVKqpObxb92FqE004zArz74Q__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA"
+                                type="video/mp4">
+                        </video>
+                        <div class="genre">
+                            <p class="satu">Drama, Mystery, Thriller | English | 4 Season</p>
+                        </div>
+                        <div class="summary" style="color: white;">Summary</div>
+                        <p class="plot">Follows teenager Clay Jensen, in his quest to uncover the story behind his
+                            classmate and crush, Hannah, and her decision to end her life.</p>
+                            <hr style="color: white;">
+                            <div class="btn-group">
+                                <button type="button" class="btn" data-bs-toggle="dropdown"
+                                    aria-expanded="false" style="color: white;">
+                                    Season 1
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Season 2</a></li>
+                                    <li><a class="dropdown-item" href="#">Season 3</a></li>
+                                    <li><a class="dropdown-item" href="#">Season 4</a></li>
+                                </ul>
+                            </div>
+                            <div class="season d-flex">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <div class="season1">
+                                            <a style="color: white;">
+                                            </a> <img
+                                                src="https://m.media-amazon.com/images/M/MV5BMTUxMTYxNzY0NF5BMl5BanBnXkFtZTgwNTEzNTQwMjI@._V1_.jpg"
+                                                style="width: 90%; height: 74px; border-radius: 10px;">
+                                            <a class="episode" style="color: white;">Episode 1</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="season2 ">
+                                            <a style="color: white;">
+                                            </a> <img
+                                                src="https://pyxis.nymag.com/v1/imgs/19c/ab5/3905b1b216d88f83589b57d51251463195-thirteen-reasons-why-season-2-ep-1.rsocial.w1200.jpg"
+                                                style="width: 90%; height: 74px; border-radius: 10px;">
+                                            <a class="episode" style="color: white;">Episode 2</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="season3">
+                                            <a style="color: white;">
+                                            </a> <img
+                                                src="https://readysteadycut.com/wp-content/uploads/2019/08/Screenshot-2019-08-23-at-08.09.26-2.png"
+                                                style="width: 90%; height: 74px; border-radius: 10px;">
+                                            <a class="episode" style="color: white;">Episode 3</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- The 100 -->
+    <div class="modal fade" id="modal100" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">The 100</h1>
+                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                    <div class="rating">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="yellow"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <p>7.6/10</p>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="kontainer">
+                        <video controls autoplay muted class="video" width="470px" style="border-radius: 15px;">
+                            <source
+                                src="https://imdb-video.media-imdb.com/vi3291659545/1434659607842-pgv4ql-1554740547954.mp4?Expires=1678904411&Signature=fTOV4-YyabELKRgQE88peiIwEc~NqfhMCTVmIvdogC0mgZLfaBwD~uPTWm7oG0SgSy0u4ZRVvlZ2ZyN3ZbjLhAU1wuDVx9QLG4tvP16YsYmAzYlUZkll710AmMZ4-5tH1u4LiacwixnQkNXthGklk5zAhkm17qIdU1n-bU06xbRc51KulC4FxDOaUQaqjysocGAz14VKFJL~afwCA7k9M6FgZmsGBL0tHOT7IrRg-g9X2OuJX6Y9QKc7lYhSXXgsSh7j2InRASrkjV4U9qcGqeVtjqpnh0TiMHSx6xsFfj32~0qqTFo-R67jDEwHOlrl~Qw2W564Eklx6wJN0hE3gw__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA"
+                                type="video/mp4">
+                        </video>
+                        <div class="genre">
+                            <p class="satu">Drama, Mystery, Sci-Fi | English | 7 Season</p>
+                        </div>
+                        <div class="summary" style="color: white;">Summary</div>
+                        <p class="plot">Set 97 years after a nuclear war destroyed civilization, when a spaceship
+                            housing humanity's lone survivors sends 100 juvenile delinquents back to Earth, hoping to
+                            repopulate the planet.</p>
+                            <hr style="color: white;">
+                            <div class="btn-group">
+                                <button type="button" class="btn" data-bs-toggle="dropdown"
+                                    aria-expanded="false" style="color: white;">
+                                    Season 1
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Season 2</a></li>
+                                    <li><a class="dropdown-item" href="#">Season 3</a></li>
+                                    <li><a class="dropdown-item" href="#">Season 4</a></li>
+                                    <li><a class="dropdown-item" href="#">Season 5</a></li>
+                                    <li><a class="dropdown-item" href="#">Season 6</a></li>
+                                    <li><a class="dropdown-item" href="#">Season 7</a></li>
+
+                                </ul>
+                            </div>
+                            <div class="season d-flex">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <div class="season1">
+                                            <a style="color: white;">
+                                            </a> <img
+                                                src="https://2.bp.blogspot.com/-IfQXO7MbL3k/U8P2gf4utGI/AAAAAAAAOHI/wa-XvTC3eYk/s1600/100.jpg"
+                                                style="width: 90%; height: 74px; border-radius: 10px;">
+                                            <a class="episode" style="color: white;">Episode 1</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="season2 ">
+                                            <a style="color: white;">
+                                            </a> <img
+                                                src="https://m.media-amazon.com/images/M/MV5BMjA4NTQ5MzMyMV5BMl5BanBnXkFtZTgwMzk5Njc5MjE@._V1_.jpg"
+                                                style="width: 90%; height: 74px; border-radius: 10px;">
+                                            <a class="episode" style="color: white;">Episode 2</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="season3">
+                                            <a style="color: white;">
+                                            </a> <img
+                                                src="https://m.media-amazon.com/images/M/MV5BMjBiZjNiNmEtYzlhOC00MWJhLWFlODktZTM3YzI4ZjcyMzE1XkEyXkFqcGdeQXVyMzQ0MDAwODE@._V1_.jpg"
+                                                style="width: 90%; height: 74px; border-radius: 10px;">
+                                            <a class="episode" style="color: white;">Episode 3</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Riverdale -->
+    <div class="modal fade" id="modalRiverdale" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Riverdale</h1>
+                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                    <div class="rating">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="yellow"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <p>6.6/10</p>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="kontainer">
+                        <video controls autoplay muted class="video" width="470px" style="border-radius: 15px;">
+                            <source
+                                src="https://imdb-video.media-imdb.com/vi42320665/1434659607842-pgv4ql-1634678396571.mp4?Expires=1678904666&Signature=luaVa82TE1jKa9zSHAyd6oXalhZGQ7O4E0z9d-DRxS5Yx7qXD4A~dlPK0xTk722vsByDkCxoe2262aqIqxxZCovYJxjeydB6c71C16rTbpWsPhv7bUvUHJIbU11laezu0yIRdBhGFUsoSs5LypByyaA9Fn0Lzj-dtCkr2QtEbg0wAWJx3MQ0kklq12sp6FDoR-M89lLpZt1Cc0Mu9qQlnxzSDYub9sNEAJnXbk-8AMYvj7QD8oWI61-Tm~g03U34lrT3HDgzlU9w~gnsR4ebf1sJtTYExa0j~wP-RP2AkNnGzy~tqMmKNHzNDvrinQ4J6wKkEbpYXNsCm1mr9DCUxg__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA"
+                                type="video/mp4">
+                        </video>
+                        <div class="genre">
+                            <p class="satu">Drama, Mystery, Crime| English | 6 Season</p>
+                        </div>
+                        <div class="summary" style="color: white;">Summary</div>
+                        <p class="plot">While navigating the troubled waters of romance, school and family, Archie and
+                            his gang become entangled in dark Riverdale mysteries.</p>
+                            <hr style="color: white;">
+                            <div class="btn-group">
+                                <button type="button" class="btn" data-bs-toggle="dropdown"
+                                    aria-expanded="false" style="color: white;">
+                                    Season 1
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Season 2</a></li>
+                                    <li><a class="dropdown-item" href="#">Season 3</a></li>
+                                    <li><a class="dropdown-item" href="#">Season 4</a></li>
+                                    <li><a class="dropdown-item" href="#">Season 5</a></li>
+                                    <li><a class="dropdown-item" href="#">Season 6</a></li>
+                                    <li><a class="dropdown-item" href="#">Season 7</a></li>
+
+                                </ul>
+                            </div>
+                            <div class="season d-flex">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <div class="season1">
+                                            <a style="color: white;">
+                                            </a> <img
+                                                src="https://m.media-amazon.com/images/M/MV5BYzYyODVkMTItYzlhZS00NjQwLWFhYzgtNGUwZDYzOTIzNTQxL2ltYWdlXkEyXkFqcGdeQXVyNjc5Mjg0NjU@._V1_.jpg"
+                                                style="width: 90%; height: 74px; border-radius: 10px;">
+                                            <a class="episode" style="color: white;">Episode 1</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="season2 ">
+                                            <a style="color: white;">
+                                            </a> <img
+                                                src="https://helios-i.mashable.com/imagery/articles/03SI4xpDm8thsfNWElO5rXO/hero-image.fill.size_1200x900.v1611615904.jpg"
+                                                style="width: 90%; height: 74px; border-radius: 10px;">
+                                            <a class="episode" style="color: white;">Episode 2</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="season3">
+                                            <a style="color: white;">
+                                            </a> <img
+                                                src="https://helios-i.mashable.com/imagery/articles/0216AMOJfS9hmpN2L3eibGd/hero-image.fill.size_1248x702.v1611616082.jpg"
+                                                style="width: 90%; height: 74px; border-radius: 10px;">
+                                            <a class="episode" style="color: white;">Episode 3</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 9-1-1 -->
+    <div class="modal fade" id="modal9-1-1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">9-1-1</h1>
+                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                    <div class="rating">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="yellow"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <p>7.8/10</p>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="kontainer">
+                        <video controls autoplay muted class="video" width="470px" style="border-radius: 15px;">
+                            <source
+                                src="https://imdb-video.media-imdb.com/vi357546521/1434659607842-pgv4ql-1552500746338.mp4?Expires=1678902884&Signature=XcuzZuyWKIGqhtriBf4tvxJFBH9YbAP7ECrJbf6QYR5maAJtzBwJMXHC~xjCaQsVZgOYvvXsTA0QMoEcVfuqIlx7e9Bcrwn5CSBJt6vmG0jAB2v8oWrc68WM64yjQFY7Cr6K6KKd9F4M5-LKgYGlahCdZMKw7pzWfQxZhC7V44j6ocbPpPQczRfGpupg13PRcYMJHHMyXcsyQ1CPa1qZwrJVRryiZEgtCKjy4C3hqo46joP06dsJXJsSFXRqaD~rF-Y-pN8L-k2HiXTdpbfEOgiEvMmgoA8H3zsMn0H481-NHgquTbaAcvZxEbGxxxZzzqahyw9KoQN7uLKHbczlOA__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA"
+                                type="video/mp4">
+                        </video>
+                        <div class="genre">
+                            <p class="satu">Action, Drama, Thriller | English | 6 Season</p>
+                        </div>
+                        <div class="summary" style="color: white;">Summary</div>
+                        <p class="plot">Explores the high-pressure experiences of the first responders who are thrust
+                            into the most frightening, shocking, and heart-stopping situations.</p>
+                            <hr style="color: white;">
+                            <div class="btn-group">
+                              <button type="button" class="btn" data-bs-toggle="dropdown"
+                                  aria-expanded="false" style="color: white;">
+                                  Season 1
+                              </button>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Season 2</a></li>
+                                <li><a class="dropdown-item" href="#">Season 3</a></li>
+                                <li><a class="dropdown-item" href="#">Season 4</a></li>
+                                <li><a class="dropdown-item" href="#">Season 5</a></li>
+                                <li><a class="dropdown-item" href="#">Season 6</a></li>
+
+                             
+                            </ul>
+                          </div>
+                          <div class="season d-flex">
+                              <div class="row">
+                                  <div class="col-4">
+                                      <div class="season1">
+                                          <a style="color: white;">
+                                          </a> <img
+                                              src="https://telltaletv.com/wp-content/uploads/2017/12/911-s1_ep101-pilot-sc21-23-36_0276_hires1-e1515098719263-730x487.jpg"
+                                              style="width: 90%; height: 74px; border-radius: 10px;">
+                                          <a class="episode" style="color: white;">Episode 1</a>
+                                      </div>
+                                  </div>
+                                  <div class="col-4">
+                                      <div class="season2 ">
+                                          <a style="color: white;">
+                                          </a> <img
+                                              src="https://m.media-amazon.com/images/M/MV5BZGIxZjViOTgtZDM0Ni00MmZmLThjOTItZTQyODViOWNmNzU3XkEyXkFqcGdeQXVyMjYwNDA2MDE@._V1_.jpg"
+                                              style="width: 90%; height: 74px; border-radius: 10px;">
+                                          <a class="episode" style="color: white;">Episode 2</a>
+                                      </div>
+                                  </div>
+                                  <div class="col-4">
+                                      <div class="season3">
+                                          <a style="color: white;">
+                                          </a> <img
+                                              src="https://tv-fanatic-res.cloudinary.com/iu/s--o641cZNk--/f_auto,q_auto/v1516242437/car-crash-9-1-1-season-1-episode-3"
+                                              style="width: 90%; height: 74px; border-radius: 10px;">
+                                          <a class="episode" style="color: white;">Episode 3</a>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modern Family -->
+    <div class="modal fade" id="modalModernFamily" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modern Family</h1>
+                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                    <div class="rating">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="yellow"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <p>8.5/10</p>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="kontainer">
+                        <video controls autoplay muted class="video" width="470px" style="border-radius: 15px;">
+                            <source
+                                src="https://imdb-video.media-imdb.com/vi3967726361/1434659607842-pgv4ql-1564151237036.mp4?Expires=1678903267&Signature=G7CYdhqfpXBLY~akxGa416G2kicZo8MlNCBwTq4LBTCdf1Ly8UVrgkPemSJFABS4ONBItAMfYt4TlAgzpypMY61sFYml1VkuiSQtuQiuDjBhRBq5qvPjUjm7nDamraI9yZFTNs2XYDS1lf5WwLLabt5YKWYeH8Uh937n6sk0P8HjmTGHTEpURClFRoCwpJ8q-0Gw4q-ANXW7hXt2e~0pljcN18XViBbiS2ctmTILi-Y0jyiBGKgu6LJAIyeZVPbpqWNhkMG8xT3dOD9ilI1bpgeRgHuuGJOhiWzbBzryF3NWv~fhSnRuOipgu7uPLN4HPKAqw1St9C8HcV82~jbG6w__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA"
+                                type="video/mp4">
+                        </video>
+                        <div class="genre">
+                            <p class="satu">Romance, Drama, Comedy | English | 11 Season</p>
+                        </div>
+                        <div class="summary" style="color: white;">Summary</div>
+                        <p class="plot">Three different but related families face trials and tribulations in their own
+                            uniquely comedic ways.</p>
+                            <hr style="color: white;">
+                            <div class="btn-group">
+                              <button type="button" class="btn" data-bs-toggle="dropdown"
+                                  aria-expanded="false" style="color: white;">
+                                  Season 1
+                              </button>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Season 2</a></li>
+                                <li><a class="dropdown-item" href="#">Season 3</a></li>
+                                <li><a class="dropdown-item" href="#">Season 4</a></li>
+                                <li><a class="dropdown-item" href="#">Season 5</a></li>
+                                <li><a class="dropdown-item" href="#">Season 6</a></li>
+                                <li><a class="dropdown-item" href="#">Season 7</a></li>
+                                <li><a class="dropdown-item" href="#">Season 9</a></li>
+                                <li><a class="dropdown-item" href="#">Season 9</a></li>
+                                <li><a class="dropdown-item" href="#">Season 10</a></li>
+                                <li><a class="dropdown-item" href="#">Season 11</a></li>
+                            </ul>
+                          </div>
+                          <div class="season d-flex">
+                              <div class="row">
+                                  <div class="col-4">
+                                      <div class="season1">
+                                          <a style="color: white;">
+                                          </a> <img
+                                              src="https://imageservice.disco.peacocktv.com/uuid/dc749bdb-db0c-3f57-985e-71c25589c52b/LAND_16_9?language=eng&territory=US&version=18a931ac-e8aa-3a60-9631-1b4d0c9e8730"
+                                              style="width: 90%; height: 74px; border-radius: 10px;">
+                                          <a class="episode" style="color: white;">Episode 1</a>
+                                      </div>
+                                  </div>
+                                  <div class="col-4">
+                                      <div class="season2 ">
+                                          <a style="color: white;">
+                                          </a> <img
+                                              src="https://m.media-amazon.com/images/M/MV5BMTY4OTU4NDIwMl5BMl5BanBnXkFtZTcwMzI5MDc4Mg@@._V1_.jpg"
+                                              style="width: 90%; height: 74px; border-radius: 10px;">
+                                          <a class="episode" style="color: white;">Episode 2</a>
+                                      </div>
+                                  </div>
+                                  <div class="col-4">
+                                      <div class="season3">
+                                          <a style="color: white;">
+                                          </a> <img
+                                              src="https://data1.ibtimes.co.in/en/full/539820/modern-family.jpg?h=450&l=50&t=40"
+                                              style="width: 90%; height: 74px; border-radius: 10px;">
+                                          <a class="episode" style="color: white;">Episode 3</a>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Wednesday -->
+    <div class="modal fade" id="modalWednesday" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Wednesday</h1>
+                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                    <div class="rating">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="yellow"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <p>8.1/10</p>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="kontainer">
+                        <video controls autoplay muted class="video" width="470px" style="border-radius: 15px;">
+                            <source
+                                src="https://imdb-video.media-imdb.com/vi1471530265/1434659607842-pgv4ql-1665275171399.mp4?Expires=1678816090&Signature=lcSoTUsyIz6WScEMKgEZl5oyGpclgfxOV7O9kNeYqNMbGFpRlOh6vmefAMorgqk~8ZNXIsBNA3qk5hgQTbnryDjAAE1c~fFuupAQ~GqfyoGzzDXHSQBJsXnde2sPPpg2eP~a7ga6b4mjx6KHxHxRyKQ09vdcXNhitYNInuQSDmSiBDLubuKDs~Oj2ghom7~txh4XZEVxfRnDHPGaEUKsWaYgrUFMSwuASBKAu3vglrGD6HwGp8vKxIjQEQyty4yOKetUIRSv6YkcS2VIbsZZyn6M-ELrmY~Wvqge578rCnBMjqFI-xQY9UlstSbbl~bylYdh1fbUKyVF8GjfgEF~IA__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA"
+                                type="video/mp4">
+                        </video>
+                        <div class="genre">
+                            <p class="satu">Comedy, Crime, Fantasy | English |1 Season</p>
+                        </div>
+                        <div class="summary" style="color: white;">Summary</div>
+                        <p class="plot">Follows Wednesday Addams' years as a student, when she attempts to master her
+                            emerging psychic ability, thwart a killing spree, and solve the mystery that embroiled her
+                            parents.</p>
+
+                            <hr style="color: white;">
+                          <div class="btn-group">
+                            <button type="button" class="btn" data-bs-toggle="dropdown"
+                                aria-expanded="false" style="color: white;">
+                                Season 1
+                            </button>
+                        </div>
+                        <div class="season d-flex">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="season1">
+                                        <a style="color: white;">
+                                        </a> <img
+                                            src="https://m.media-amazon.com/images/M/MV5BNTU2YzRhYzAtNWI4YS00YzgzLWIwOWMtY2MxZTc5NDAxMjU1XkEyXkFqcGdeQXVyNjUxMjc1OTM@._V1_.jpg"
+                                            style="width: 90%; height: 74px; border-radius: 10px;">
+                                        <a class="episode" style="color: white;">Episode 1</a>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="season2 ">
+                                        <a style="color: white;">
+                                        </a> <img
+                                            src="https://staticg.sportskeeda.com/editor/2022/11/d904b-16692067971010-1920.jpg"
+                                            style="width: 90%; height: 74px; border-radius: 10px;">
+                                        <a class="episode" style="color: white;">Episode 2</a>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="season3">
+                                        <a style="color: white;">
+                                        </a> <img
+                                            src="https://pyxis.nymag.com/v1/imgs/ef0/8e5/48ad93eba7bfe21786a39b6a3564fe829a-recaps-wednesday-3.2x.rsocial.w600.jpg"
+                                            style="width: 90%; height: 74px; border-radius: 10px;">
+                                        <a class="episode" style="color: white;">Episode 3</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Outer Banks -->
+    <div class="modal fade" id="modalOuterBanks" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Outer Banks</h1>
+                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                    <div class="rating">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="yellow"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <p>7.5/10</p>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="kontainer">
+                        <video controls autoplay muted class="video" width="470px" style="border-radius: 15px;">
+                            <source
+                                src="https://imdb-video.media-imdb.com/vi1108985113/1434659607842-pgv4ql-1675355308586.mp4?Expires=1678979558&Signature=tUpyBP7NVmsYQh8Nw~9S0FAkYVSvsgf7s6eUwfPhmQGvjtjBB1kc6o6225s3duxGc~DeVv3sIGYkX9YlZBKc0rWWuLPaSewR3kgG~Jimakynwzl5sCSa6NDw-Y~gc19A7KbfXJXLifK9aEh9PnwHf~iYHQ3kCYxXIW6-HmICi3RNCapX~kteTFvB6D8Ql3F-KG~KlRoi~Go37VXhNFSmRm9eYsXF9CyKG4pNTfuQAHZgBuIwR0ZQJ3xiwIyv624Fx-tGp6gPRqioznsIPcqkod-NGtD~zCcCFxVdb0XuYFs~PUi7B0NtrPQxx9D~XTW2gCyxDQHTT2z7TQY6jKpACQ__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA"
+                                type="video/mp4">
+                        </video>
+                        <div class="genre">
+                            <p class="satu">Action, Crime, Drama | English |3 Season</p>
+                        </div>
+                        <div class="summary" style="color: white;">Summary</div>
+                        <p class="plot">On an island of haves and have-nots, teen John B enlists his three best friends
+                            to hunt for a legendary treasure linked to his father's disappearance.</p>
+                            <hr style="color: white;">
+                            <div class="btn-group">
+                              <button type="button" class="btn" data-bs-toggle="dropdown"
+                                  aria-expanded="false" style="color: white;">
+                                  Season 1
+                              </button>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Season 2</a></li>
+                                <li><a class="dropdown-item" href="#">Season 3</a></li>
+                             
+                            </ul>
+                          </div>
+                          <div class="season d-flex">
+                              <div class="row">
+                                  <div class="col-4">
+                                      <div class="season1">
+                                          <a style="color: white;">
+                                          </a> <img
+                                              src="https://tv-fanatic-res.cloudinary.com/iu/s--9g8VyNQ9--/f_auto,q_auto/v1587069994/friends-on-a-boat-outer-banks-season-1"
+                                              style="width: 90%; height: 74px; border-radius: 10px;">
+                                          <a class="episode" style="color: white;">Episode 1</a>
+                                      </div>
+                                  </div>
+                                  <div class="col-4">
+                                      <div class="season2 ">
+                                          <a style="color: white;">
+                                          </a> <img
+                                              src="https://m.media-amazon.com/images/M/MV5BYTkxNzNhM2ItNTgyOS00YmI4LThhZjAtMmQzYzJiZmE0OTVlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg"
+                                              style="width: 90%; height: 74px; border-radius: 10px;">
+                                          <a class="episode" style="color: white;">Episode 2</a>
+                                      </div>
+                                  </div>
+                                  <div class="col-4">
+                                      <div class="season3">
+                                          <a style="color: white;">
+                                          </a> <img
+                                              src="https://m.media-amazon.com/images/M/MV5BZjg1MzI5ZDAtZmE5Ni00MzkyLTlmYzAtNDk2MzM0ZTdkYTc5XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg"
+                                              style="width: 90%; height: 74px; border-radius: 10px;">
+                                          <a class="episode" style="color: white;">Episode 3</a>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- The Boys -->
+    <div class="modal fade" id="modalTheBoys" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">The Boys</h1>
+                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                    <div class="rating">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="yellow"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <p>8.7/10</p>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="kontainer">
+                        <video controls autoplay muted class="video" width="470px" style="border-radius: 15px;">
+                            <source
+                                src="https://imdb-video.media-imdb.com/vi2358034969/1434659607842-pgv4ql-1652716728659.mp4?Expires=1678816339&Signature=IkiQ8XUEKFSABBRCPXdLJ-nuoT8pEH-8ttwj1imt3lTxN22c0MLq2psP5lls4qYjWK3uyi3eOBrlLfUkrsH4OzJ~HK~lrWOIatuORH0q~N0yIWPTSI~6YcpsLAIbUdm3VpGjoVfzUwMqZMARuN8Bj7woYp6NH1mTA2zoy3vyEv06oMnjzN0qY60wVmJUTLYY~bx-qHXjQjTQz2wIua76zSZUodhex4ovspazgekQrCyKC3nQewFteW0nEIb7PrudHNUwb9NDHm82C3bo7FWs~SlNWyA8~atrw12LKhwHA77e3tYkVSlj1HwcRaOxUEViEtFe3JVnliySa3edgXEUOg__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA"
+                                type="video/mp4">
+                        </video>
+                        <div class="genre">
+                            <p class="satu">Comedy, Crime, Action | English | 3 Season</p>
+                        </div>
+                        <div class="summary" style="color: white;">Summary</div>
+                        <p class="plot">A group of vigilantes set out to take down corrupt superheroes who abuse their
+                            superpowers.</p>
+                            <hr style="color: white;">
+                            <div class="btn-group">
+                              <button type="button" class="btn" data-bs-toggle="dropdown"
+                                  aria-expanded="false" style="color: white;">
+                                  Season 1
+                              </button>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Season 2</a></li>
+                                <li><a class="dropdown-item" href="#">Season 3</a></li>
+                             
+                            </ul>
+                          </div>
+                          <div class="season d-flex">
+                              <div class="row">
+                                  <div class="col-4">
+                                      <div class="season1">
+                                          <a style="color: white;">
+                                          </a> <img
+                                              src="https://www.slashfilm.com/img/gallery/the-boys-season-3-is-the-most-messed-up-so-far-jack-quaid-teases/l-intro-1642614451.jpg"
+                                              style="width: 90%; height: 74px; border-radius: 10px;">
+                                          <a class="episode" style="color: white;">Episode 1</a>
+                                      </div>
+                                  </div>
+                                  <div class="col-4">
+                                      <div class="season2 ">
+                                          <a style="color: white;">
+                                          </a> <img
+                                              src="https://m.media-amazon.com/images/M/MV5BYTNlYmRlYmMtNzhjMC00YjQ2LThkZGItNjAwNjI5MjkxM2QzXkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_.jpg"
+                                              style="width: 90%; height: 74px; border-radius: 10px;">
+                                          <a class="episode" style="color: white;">Episode 2</a>
+                                      </div>
+                                  </div>
+                                  <div class="col-4">
+                                      <div class="season3">
+                                          <a style="color: white;">
+                                          </a> <img
+                                              src="https://m.media-amazon.com/images/M/MV5BNWZlNjAwYjYtYzk0Ny00ZjkzLTk0ZGItMzY1ZmJjMTlhYTM4XkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_FMjpg_UX1000_.jpg"
+                                              style="width: 90%; height: 74px; border-radius: 10px;">
+                                          <a class="episode" style="color: white;">Episode 3</a>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Money Heist -->
+    <div class="modal fade" id="modalMoneyHeist" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Money Heist</h1>
+                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                    <div class="rating">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="yellow"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <p>8.2/10</p>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="kontainer">
+                        <video controls autoplay muted class="video" width="470px" style="border-radius: 15px;">
+                            <source
+                                src="https://imdb-video.media-imdb.com/vi2646786841/1434659607842-pgv4ql-1639145170138.mp4?Expires=1678816436&Signature=usa9tXOQ69AcfsXYW4aFdRyLgK8gP-iVrzKnYHdPviuu0NsYklrkmEpLafJ-vKnsrqEMQ2Hn9gLB-EFrVfZlNCaBkB8uYTS-xhhFfzgjF3oKcMtroqtsZ6jMXtrbinP50wYL5ffzsuINvFz1vfvA~gL5kfkfok9elWMQHs0v7CFSydp3xXna2o-HpQdOslEvZ5S4xMqjYMSi1MhAj57UlFkW34BE~VI0OaxarbB13dKeqWvh1mv-Awxf4QY52cV01NcVCyAJomGw5jZMyzKvQI~g8xbzpZdIB2QhHetnZftnls-IVapta0SGRnhEGTQJzDcWKgISOg4~AH6V3PR4zw__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA"
+                                type="video/mp4">
+                        </video>
+                        <div class="genre">
+                            <p class="satu">Drama, Crime, Action | English | 5 Season</p>
+                        </div>
+                        <div class="summary" style="color: white;">Summary</div>
+                        <p class="plot">An unusual group of robbers attempt to carry out the most perfect robbery in
+                            Spanish history - stealing 2.4 billion euros from the Royal Mint of Spain.</p>
+                            <hr style="color: white;">
+                            <div class="btn-group">
+                              <button type="button" class="btn" data-bs-toggle="dropdown"
+                                  aria-expanded="false" style="color: white;">
+                                  Season 1
+                              </button>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Season 2</a></li>
+                                <li><a class="dropdown-item" href="#">Season 3</a></li>
+                                <li><a class="dropdown-item" href="#">Season 4</a></li>
+                                <li><a class="dropdown-item" href="#">Season 5</a></li>
+                            </ul>
+                          </div>
+                          <div class="season d-flex">
+                              <div class="row">
+                                  <div class="col-4">
+                                      <div class="season1">
+                                          <a style="color: white;">
+                                          </a> <img
+                                              src="https://anjalisk96.files.wordpress.com/2021/10/images-2021-10-09t161654.030-1.jpeg"
+                                              style="width: 90%; height: 74px; border-radius: 10px;">
+                                          <a class="episode" style="color: white;">Episode 1</a>
+                                      </div>
+                                  </div>
+                                  <div class="col-4">
+                                      <div class="season2 ">
+                                          <a style="color: white;">
+                                          </a> <img
+                                              src="https://i0.wp.com/www.screenspy.com/wp-content/uploads/2021/12/money-heist-s1-e2-10.png?ssl=1"
+                                              style="width: 90%; height: 74px; border-radius: 10px;">
+                                          <a class="episode" style="color: white;">Episode 2</a>
+                                      </div>
+                                  </div>
+                                  <div class="col-4">
+                                      <div class="season3">
+                                          <a style="color: white;">
+                                          </a> <img
+                                              src="https://m.media-amazon.com/images/M/MV5BNDM5ZDE0ZTYtOWQxYy00Yzc3LTg1YTQtNzFiM2YyOTExNDk0XkEyXkFqcGdeQXVyNjI4MTY4MjA@._V1_FMjpg_UX1000_.jpg"
+                                              style="width: 90%; height: 74px; border-radius: 10px;">
+                                          <a class="episode" style="color: white;">Episode 3</a>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Form -->
+    <div class="modal fade" id="modalForm" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="kontainer">
+                        <form>
+                            <div class="fullfeedback">
+                                <div class="msg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#FFC907"
+                                        class="bi bi-envelope-fill" viewBox="0 0 16 16" style="margin-top: 5px;">
+                                        <path
+                                            d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
+                                    </svg>
+                                    <h4 class="formsubs">Form Subscriber</h4>
+
+                                </div>
+                                <div class="batas" style="border: 1px solid #FFC907;  ;"></div>
+
+                                <div class="feedback" style="color: black;">
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">Email address:</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1"
+                                            aria-describedby="emailHelp" style="margin-top: 0px; height: auto;">
+                                        <div id="emailHelp" class="form-text" style="color: black;">We'll send you an
+                                            email to payment.</div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputPassword1" class="form-label">Name:</label>
+                                        <input type="text" class="form-control" id="exampleInputPassword1"
+                                            style="margin-top: 0px; width: 100%; height: auto;">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputPassword1" class="form-label">Phone Number:</label>
+                                        <input type="number" class="form-control" id="exampleInputPassword1"
+                                            style="margin-top: 0px; width: 100%; height: auto;">
+                                    </div>
+                                    <label for="exampleInputEmail1" class="form-label">Select Package:</label>
+                                    <select class="form-select" aria-label="Default select example">
+
+                                        <option value="1">4K Resolution (Now Available)</option>
+                                        <option value="2">Full HD 1080p</option>
+                                        <option value="3">HD 720p</option>
+                                        <option value="3">480p</option>
+                                    </select>
+
+                                    <button type="submit" class="btn btn-primary"
+                                        style="margin-top: 20px; display: flex; margin-left: auto; margin-right: auto;">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- Modal Contact Us -->
+        <div class="modal fade" id="modalcontact" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="kontainer">
+                            <form>
+                                <div class="fullfeedback">
+                                    <h4 style="color: white; justify-content: center; align-items: center; display: flex;">Form Feedback</h4>
+                                    <div class="mb-3">
+                                        <label for="exampleFormControlInput1" class="form-label" style="color: grey;">Email address</label>
+                                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" style="margin-top: 0px;">
+                                      </div>
+                                      <div class="mb-3">
+                                        <label for="exampleFormControlInput1" class="form-label" style="color: grey;">Name:</label>
+                                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Your Name Here" style="margin-top: 0px;">
+                                      </div>
+                                      <div class="mb-3">
+                                        <label for="exampleFormControlInput1" class="form-label" style="color: grey;">Last Name</label>
+                                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Your Last Name Here" style="margin-top: 0px;">
+                                      </div>
+                                      <div class="mb-3">
+                                        <label for="exampleFormControlTextarea1" class="form-label" style="color: grey;">FeedBack</label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Write Your FeedBack Here" rows="3" style="height: 20%; margin-top: 0px;"></textarea>
+                                      </div>
+                                      <button type="submit" class="btn btn-primary"
+                                        style="margin-top: 20px; display: flex; margin-left: auto; margin-right: auto;">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!------------- END MODAL--------------- -->
+
+    <!-- BreadCrumb -->
+    <!-- <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+            <ol class="breadcrumb d-flex">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Series</li>
+            </ol>
+          </nav> -->
     <!-- Alerts -->
-    <!-- <div class="alert alert-dark" role="alert" style="margin: 0px;">
+    <div class="alert alert-dark" role="alert" style="margin: 0px; text-align: center ;">
+        4K Resolution is Now Available on Premium+ Subs now to get the benefit
+    </div>
+    <!-- <div class="alert alert-dark" role="alert" style="margin: 0px; text-align: center ;">
         Coming Soon, Outer Banks Season 4!<a href="https://www.imdb.com/title/tt10293938/"> Click here</a> to watch
         trailer
     </div> -->
 
 
+
+
+
     <!-- CAROUSEL -->
-    <!-- <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
         <div class="carousel-inner">
+
             <div class="carousel-item carousel-image active" data-bs-interval="3000">
-                <div class="highlight-1"></div>
-                <div class="container">
-                    <h1>Outer Banks</h1>
-                    <p>On an island of haves and have-nots, teen John B enlists his three best friends to hunt for a
-                        legendary treasure linked to his father's disappearance.</p>
-                    <a href="https://www.imdb.com/title/tt10293938/" class="btn btn-lg btn-info"> Watch</a>
+                <div class="highlight-1">
+                    <div class="container-judul">
+                        <h1>The Last of Us</h1>
+                        <p>After a global pandemic destroys civilization, a hardened survivor takes charge of a
+                            14-year-old girl who may be humanity's last hope.</p>
+                        <a href="https://www.imdb.com/title/tt3581920/?ref_=nv_sr_srsg_2" target="_blank" class="btn btn-lg btn-info"> Watch</a>
+                    </div>
                 </div>
-
             </div>
 
             <div class="carousel-item carousel-image" data-bs-interval="3000">
-                <div class="highlight-2"></div>
-                <div class="container">
-                    <h1>Arrow</h1>
-                    <p>On an island of haves and have-nots, teen John B enlists his three best friends to hunt for a
-                        legendary treasure linked to his father's disappearance.</p>
-                    <a href="https://www.imdb.com/title/tt10293938/" class="btn btn-lg btn-info"> Watch</a>
+                <div class="highlight-2">
+                    <div class="container-judul">
+                        <h1>Outer Banks</h1>
+                        <p>On an island of haves and have-nots, teen John B enlists his three best friends to hunt for a
+                            legendary treasure linked to his father's disappearance.</p>
+                        <a href="https://www.imdb.com/title/tt10293938/"  target="_blank" class="btn btn-lg btn-info"> Watch</a>
+                    </div>
                 </div>
             </div>
             <div class="carousel-item carousel-image" data-bs-interval="3000">
-                <div class="highlight-3"></div>
-                <div class="container">
-                    <h1>The Last Of Us</h1>
-                    <p>On an island of haves and have-nots, teen John B enlists his three best friends to hunt for a
-                        legendary treasure linked to his father's disappearance.</p>
-                    <a href="https://www.imdb.com/title/tt10293938/" class="btn btn-lg btn-info"> Watch</a>
+                <div class="highlight-3">
+                    <div class="container-judul">
+                        <h1>Money Heist</h1>
+                        <p>An unusual group of robbers attempt to carry out the most perfect robbery in Spanish history
+                            - stealing 2.4 billion euros from the Royal Mint of Spain.</p>
+                        <a href="https://www.imdb.com/title/tt6468322/?ref_=nv_sr_srsg_0"  target="_blank" class="btn btn-lg btn-info"> Watch</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -119,220 +1429,332 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
-    </div> -->
+    </div>
+    <!-- End Carousel -->
 
-    <!----- Cards ----->
 
 
-    <div class="coverall">
-        <h4 class="option">Favorit</h4>
-        <div style="margin-top: 10px;" class="container-fluid d-flex col-12 col-md-6 col-lg-4 col-xl-2 ">
-            <div class="col-12 col-md-6 col-lg-4 col-xl-2">
-                <div class="card" style="background: none; border: none;">
-                    <img src="https://image.tmdb.org/t/p/w185/pqzjCxPVc9TkVgGRWeAoMmyqkZV.jpg" class="card-img-top"
-                        alt="...">
-                    <div class="card-body">
-                        <h1 class="title">Hawk Eye</h1>
+    <!-- Cards -->
+    <div class="fullcover">
+        <h4 class="list">Favorite</h4>
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-md-4 col-lg-2 col-xl-2 ">
+                    <div class="card" data-bs-toggle="modal" data-bs-target="#modalthelastofus"
+                        style="background: none; border: none;">
+                        <img src="https://image.tmdb.org/t/p/w185/uKvVjHNqB5VmOrdxqAt2F7J78ED.jpg" alt=""
+                            class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">The Last of Us</h5>
+                            <p class="card-text"></p>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="col-12 col-md-6 col-lg-4 col-xl-2">
-                <div class="card" style=" background: none; border: none;">
-                    <img src="https://image.tmdb.org/t/p/w185/uKvVjHNqB5VmOrdxqAt2F7J78ED.jpg" class="card-img-top"
-                        alt="...">
-                    <div class="card-body">
-                        <h1 class="title">The Last Of Us</h1>
+                <div class="col-4 col-md-4 col-lg-2 col-xl-2">
+                    <div class="card" data-bs-toggle="modal" data-bs-target="#modalthewalkingdead"
+                        style="background: none; border: none;">
+                        <img src="https://image.tmdb.org/t/p/w185/xf9wuDcqlUPWABZNeDKPbZUjWx0.jpg" alt=""
+                            class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">The Walking Dead</h5>
+                            <p class="card-text"></p>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="col-12 col-md-6 col-lg-4 col-xl-2">
-                <div class="card" style="background: none; border: none;">
-                    <img src="https://image.tmdb.org/t/p/w185/ovDgO2LPfwdVRfvScAqo9aMiIW.jpg" class="card-img-top"
-                        alt="...">
-                    <div class="card-body">
-                        <h1 class="title">Outer Banks</h1>
+                <div class="col-4 col-md-4 col-lg-2 col-xl-2">
+                    <div class="card" data-bs-toggle="modal" data-bs-target="#modalWednesday"
+                        style="background: none; border: none;">
+                        <img src="https://image.tmdb.org/t/p/w185/jeGtaMwGxPmQN5xM4ClnwPQcNQz.jpg" alt=""
+                            class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Wednesday</h5>
+                            <p class="card-text"></p>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="col-12 col-md-6 col-lg-4 col-xl-2">
-                <div class="card" style="  background: none; border: none;">
-                    <img src="https://image.tmdb.org/t/p/w185/jeGtaMwGxPmQN5xM4ClnwPQcNQz.jpg" class="card-img-top"
-                        alt="...">
-                    <div class="card-body">
-                        <h1 class="title">Wednesday</h1>
+                <div class="col-4 col-md-4 col-lg-2 col-xl-2">
+                    <div class="card" data-bs-toggle="modal" data-bs-target="#modalOuterBanks"
+                        style="background: none; border: none;">
+                        <img src="https://image.tmdb.org/t/p/w185/ovDgO2LPfwdVRfvScAqo9aMiIW.jpg" alt=""
+                            class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Outer Banks</h5>
+                            <p class="card-text"></p>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="col-12 col-md-6 col-lg-4 col-xl-2">
-                <div class="card" style="  background: none; border: none;">
-                    <img src="https://image.tmdb.org/t/p/w185/xf9wuDcqlUPWABZNeDKPbZUjWx0.jpg" class="card-img-top"
-                        alt="...">
-                    <div class="card-body">
-                        <h1 class="title">The Walking Dead</h1>
+                <div class="col-4 col-md-4 col-lg-2 col-xl-2">
+                    <div class="card" data-bs-toggle="modal" data-bs-target="#modalTheBoys"
+                        style="background: none; border: none;">
+                        <img src="https://image.tmdb.org/t/p/w185/ut4PhX7OP2l2oJhrIUYWnt9pnQU.jpg" alt=""
+                            class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">The Boys</h5>
+                            <p class="card-text"></p>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="col-12 col-md-6 col-lg-4 col-xl-2">
-                <div class="card" style=" background: none; border: none;">
-                    <img src="https://image.tmdb.org/t/p/w185/ut4PhX7OP2l2oJhrIUYWnt9pnQU.jpg" class="card-img-top"
-                        alt="...">
-                    <div class="card-body">
-                        <h1 class="title">The Boys</h1>
+                <div class="col-4 col-md-4 col-lg-2 col-xl-2">
+                    <div class="card" data-bs-toggle="modal" data-bs-target="#modalMoneyHeist"
+                        style="background: none; border: none;">
+                        <img src="moneyheist2.PNG" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Money Heist</h5>
+                            <p class="card-text"></p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- <h4 class="option">Favorit Anda</h4>
-        
-        <div style="margin-top: 10px;" class="container-fluid d-flex gap-5 justify-content-center">
-            <div class="card" style="width: 10rem;  background: none; border: none;" >
-                <img src="https://image.tmdb.org/t/p/w185/pqzjCxPVc9TkVgGRWeAoMmyqkZV.jpg"
-                    class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h1 class="title">Hawk Eye</h1>
-                </div>
-            </div>
-
-            <div class="card" style="width: 10rem;  background: none; border: none;">
-                <img src="https://image.tmdb.org/t/p/w185/uKvVjHNqB5VmOrdxqAt2F7J78ED.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h1 class="title">The Last Of Us</h1>
-                 
-                </div>
-            </div>
-
-            <div class="card" style="width: 10rem; background: none; border: none;">
-                <img src="https://image.tmdb.org/t/p/w185/ovDgO2LPfwdVRfvScAqo9aMiIW.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h1 class="title">Outer Banks</h1>
-                </div>
-            </div>
-
-            <div class="card" style= "width: 10rem;  background: none; border: none;" >
-                <img src="https://image.tmdb.org/t/p/w185/jeGtaMwGxPmQN5xM4ClnwPQcNQz.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h1 class="title">Wednesday</h1>
+        <h4 class="list">Continue to Watch</h4>
+        <div class="container">
+            <div class="row">
                 
+
+                <div class="col-4 col-md-4 col-lg-2 col-xl-2">
+                    <div class="card" data-bs-toggle="modal" data-bs-target="#modal9-1-1"
+                        style="background: none; border: none;">
+                        <img src="https://image.tmdb.org/t/p/w185/yD8iS1Hbq76XmWzbaFbWH66SFH6.jpg" alt=""
+                            class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">9-1-1</h5>
+                            <p class="card-text"></p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="card" style= "width: 10rem;  background: none; border: none;">
-                <img src="https://image.tmdb.org/t/p/w185/xf9wuDcqlUPWABZNeDKPbZUjWx0.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h1 class="title">The Walking Dead</h1>
-                    
+                <div class="col-4 col-md-4 col-lg-2 col-xl-2">
+                    <div class="card" data-bs-toggle="modal" data-bs-target="#modalTheBoys"
+                        style="background: none; border: none;">
+                        <img src="https://image.tmdb.org/t/p/w185/ut4PhX7OP2l2oJhrIUYWnt9pnQU.jpg" alt=""
+                            class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">The Boys</h5>
+                            <p class="card-text"></p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="card" style= "width: 10rem;  background: none; border: none;">
-                <img src="https://image.tmdb.org/t/p/w185/ut4PhX7OP2l2oJhrIUYWnt9pnQU.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h1 class="title">The Boys</h1>
+                <div class="col-4 col-md-4 col-lg-2 col-xl-2">
+                    <div class="card" data-bs-toggle="modal" data-bs-target="#modalModernFamily"
+                        style="background: none; border: none;">
+                        <img src="https://flxt.tmsimg.com/assets/p8257662_b_v8_ab.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Modern Family</h5>
+                            <p class="card-text"></p>
+                        </div>
+                    </div>
+                </div>
+              
+                <div class="col-4 col-md-4 col-lg-2 col-xl-2">
+                    <div class="card" data-bs-toggle="modal" data-bs-target="#modalMoneyHeist"
+                        style="background: none; border: none;">
+                        <img src="moneyheist2.PNG" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Money Heist</h5>
+                            <p class="card-text"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 col-md-4 col-lg-2 col-xl-2 ">
+                    <div class="card" data-bs-toggle="modal" data-bs-target="#modalthelastofus"
+                        style="background: none; border: none;">
+                        <img src="https://image.tmdb.org/t/p/w185/uKvVjHNqB5VmOrdxqAt2F7J78ED.jpg" alt=""
+                            class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">The Last of Us</h5>
+                            <p class="card-text"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4 col-md-4 col-lg-2 col-xl-2">
+                    <div class="card" data-bs-toggle="modal" data-bs-target="#modalOuterBanks"
+                        style="background: none; border: none;">
+                        <img src="https://image.tmdb.org/t/p/w185/ovDgO2LPfwdVRfvScAqo9aMiIW.jpg" alt=""
+                            class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Outer Banks</h5>
+                            <p class="card-text"></p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <h4 class="option">Favorit Anda</h4>
-        
-        <div style="margin-top: 10px;" class="container-fluid d-flex gap-5 justify-content-center">
-            <div class="card" style="width: 10rem;  background: none; border: none;" >
-                <img src="https://image.tmdb.org/t/p/w185/pqzjCxPVc9TkVgGRWeAoMmyqkZV.jpg"
-                    class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h1 class="title">Hawk Eye</h1>
+        <div class="first-title">
+            <h4 class="list">Best Series</h4>
+            <a href="series.html" class="second-list"> See More</a>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-md-4 col-lg-2 col-xl-2">
+                    <div class="card" data-bs-toggle="modal" data-bs-target="#modalgot"
+                        style="background: none; border: none;">
+                        <img src="https://image.tmdb.org/t/p/w185/u3bZgnGQ9T01sWNhyveQz0wH0Hl.jpg" alt=""
+                            class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Game of Thrones</h5>
+                            <p class="card-text"></p>
+                        </div>
+                    </div>
                 </div>
-            </div>
 
-            <div class="card" style="width: 10rem;  background: none; border: none;">
-                <img src="https://image.tmdb.org/t/p/w185/uKvVjHNqB5VmOrdxqAt2F7J78ED.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h1 class="title">The Last Of Us</h1>
-                 
+                <div class="col-4 col-md-4 col-lg-2 col-xl-2">
+                    <div class="card" data-bs-toggle="modal" data-bs-target="#modalobx"
+                        style="background: none; border: none;">
+                        <img src="https://image.tmdb.org/t/p/w185/97kRxryosPhmATVJcG2FjCewaS9.jpg" alt=""
+                            class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Stranger Things</h5>
+                            <p class="card-text"></p>
+                        </div>
+                    </div>
                 </div>
-            </div>
 
-            <div class="card" style="width: 10rem; background: none; border: none;">
-                <img src="https://image.tmdb.org/t/p/w185/ovDgO2LPfwdVRfvScAqo9aMiIW.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h1 class="title">Outer Banks</h1>
+                <div class="col-4 col-md-4 col-lg-2 col-xl-2">
+                    <div class="card" data-bs-toggle="modal" data-bs-target="#modalthewalkingdead"
+                        style="background: none; border: none;">
+                        <img src="https://image.tmdb.org/t/p/w185/xf9wuDcqlUPWABZNeDKPbZUjWx0.jpg" alt=""
+                            class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">The Walking Dead</h5>
+                            <p class="card-text"></p>
+                        </div>
+                    </div>
                 </div>
-            </div>
 
-            <div class="card" style= "width: 10rem;  background: none; border: none;" >
-                <img src="https://image.tmdb.org/t/p/w185/jeGtaMwGxPmQN5xM4ClnwPQcNQz.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h1 class="title">Wednesday</h1>
-                
+                <div class="col-4 col-md-4 col-lg-2 col-xl-2">
+                    <div class="card" data-bs-toggle="modal" data-bs-target="#modal13"
+                        style="background: none; border: none;">
+                        <img src="https://image.tmdb.org/t/p/w185/rYERgBFelEHzthx7AdOR6zaSHtb.jpg" alt=""
+                            class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">13 Reason Why</h5>
+                            <p class="card-text"></p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="card" style= "width: 10rem;  background: none; border: none;">
-                <img src="https://image.tmdb.org/t/p/w185/xf9wuDcqlUPWABZNeDKPbZUjWx0.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h1 class="title">The Walking Dead</h1>
-                    
+                <div class="col-4 col-md-4 col-lg-2 col-xl-2">
+                    <div class="card" data-bs-toggle="modal" data-bs-target="#modal100"
+                        style="background: none; border: none;">
+                        <img src="https://image.tmdb.org/t/p/w185/wcaDIAG1QdXQLRaj4vC1EFdBT2.jpg" alt=""
+                            class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">The 100</h5>
+                            <p class="card-text"></p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="card" style= "width: 10rem;  background: none; border: none;">
-                <img src="https://image.tmdb.org/t/p/w185/ut4PhX7OP2l2oJhrIUYWnt9pnQU.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h1 class="title">The Boys</h1>
+                <div class="col-4 col-md-4 col-lg-2 col-xl-2">
+                    <div class="card" data-bs-toggle="modal" data-bs-target="#modalRiverdale"
+                        style="background: none; border: none;">
+                        <img src="https://m.media-amazon.com/images/M/MV5BODFlZWZhNWEtN2NkZC00OTkyLWE0N2QtMDQwNzY1ZDY5MzFiXkEyXkFqcGdeQXVyMzQ2MDI5NjU@._V1_UX140_CR0,0,140,209_AL_.jpg"
+                            alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Riverdale</h5>
+                            <p class="card-text"></p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+        <div class="first-title">
+            <h4 class="list">Best Movies</h4>
+            <a href="movies.html" class="second-list"> See More</a>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-md-4 col-lg-2 col-xl-2 ">
+                    <div class="card" data-bs-toggle="modal" data-bs-target="#modalthelastofus"
+                        style="background: none; border: none;">
+                        <img src="https://image.tmdb.org/t/p/w185/uKvVjHNqB5VmOrdxqAt2F7J78ED.jpg" alt=""
+                            class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">The Last of Us</h5>
+                            <p class="card-text"></p>
+                        </div>
+                    </div>
+                </div>
 
-        <h4 class="option">Favorit Anda</h4>
-        
-        <div style="margin-top: 10px;" class="container-fluid d-flex gap-5 justify-content-center">
-            <div class="card" style="width: 10rem;  background: none; border: none;" >
-                <img src="https://image.tmdb.org/t/p/w185/pqzjCxPVc9TkVgGRWeAoMmyqkZV.jpg"
-                    class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h1 class="title">Hawk Eye</h1>
+                <div class="col-4 col-md-4 col-lg-2 col-xl-2">
+                    <div class="card" data-bs-toggle="modal" data-bs-target="#modalthewalkingdead"
+                        style="background: none; border: none;">
+                        <img src="https://image.tmdb.org/t/p/w185/xf9wuDcqlUPWABZNeDKPbZUjWx0.jpg" alt=""
+                            class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">The Walking Dead</h5>
+                            <p class="card-text"></p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-
-            <div class="card" style="width: 10rem;  background: none; border: none;">
-                <img src="https://image.tmdb.org/t/p/w185/uKvVjHNqB5VmOrdxqAt2F7J78ED.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h1 class="title">The Last Of Us</h1>
-                 
+                <div class="col-4 col-md-4 col-lg-2 col-xl-2">
+                    <div class="card" data-bs-toggle="modal" data-bs-target="#modalwednesday"
+                        style="background: none; border: none;">
+                        <img src="https://image.tmdb.org/t/p/w185/jeGtaMwGxPmQN5xM4ClnwPQcNQz.jpg" alt=""
+                            class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Wednesday</h5>
+                            <p class="card-text"></p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-
-            <div class="card" style="width: 10rem; background: none; border: none;">
-                <img src="https://image.tmdb.org/t/p/w185/ovDgO2LPfwdVRfvScAqo9aMiIW.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h1 class="title">Outer Banks</h1>
+                <div class="col-4 col-md-4 col-lg-2 col-xl-2">
+                    <div class="card" data-bs-toggle="modal" data-bs-target="#modalOuterBanks"
+                        style="background: none; border: none;">
+                        <img src="https://image.tmdb.org/t/p/w185/ovDgO2LPfwdVRfvScAqo9aMiIW.jpg" alt=""
+                            class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Outer Banks</h5>
+                            <p class="card-text"></p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-
-            <div class="card" style= "width: 10rem;  background: none; border: none;" >
-                <img src="https://image.tmdb.org/t/p/w185/jeGtaMwGxPmQN5xM4ClnwPQcNQz.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h1 class="title">Wednesday</h1>
-                
+                <div class="col-4 col-md-4 col-lg-2 col-xl-2">
+                    <div class="card" data-bs-toggle="modal" data-bs-target="#modaltheboys"
+                        style="background: none; border: none;">
+                        <img src="https://image.tmdb.org/t/p/w185/ut4PhX7OP2l2oJhrIUYWnt9pnQU.jpg" alt=""
+                            class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">The Boys</h5>
+                            <p class="card-text"></p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="card" style= "width: 10rem;  background: none; border: none;">
-                <img src="https://image.tmdb.org/t/p/w185/xf9wuDcqlUPWABZNeDKPbZUjWx0.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h1 class="title">The Walking Dead</h1>
-                    
-                </div>
-            </div>
-            <div class="card" style= "width: 10rem;  background: none; border: none;">
-                <img src="https://image.tmdb.org/t/p/w185/ut4PhX7OP2l2oJhrIUYWnt9pnQU.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h1 class="title">The Boys</h1>
+                <div class="col-4 col-md-4 col-lg-2 col-xl-2">
+                    <div class="card" data-bs-toggle="modal" data-bs-target="#modalmoneyheist"
+                        style="background: none; border: none;">
+                        <img src="moneyheist2.PNG" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Money Heist</h5>
+                            <p class="card-text"></p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div> -->
+        <!-- End Cards -->
 
+
+        <!-- Form Control -->
+
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="footer-content">
+                <h3> F2k.<span style=" color: #FFC907;">Stream</span></h3>
+                <p>F2k.Stream is a Online Streaming Movies designed by Fadel</p>
+                <ul class="socials">
+                    <li><a href="https://www.instagram.com/fadelmuhamadp/" target="_blank"><i class="fa-brands fa-instagram" ></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/fadel-muhamad-prianto-009480150/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="https://twitter.com/fadelmuhamadp"target="_blank" ><i class="fa-brands fa-twitter"></i></i></a></li>
+
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>copyright &copy;2023 F2k. Designed by Fadel</p>
+            </div>
+        </footer>
 
 
 
