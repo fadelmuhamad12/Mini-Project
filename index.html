@@ -9,8 +9,17 @@
     <!-- FavICon -->
    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
     <!-- Font AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Script -->
+    <script src="script.js" defer></script>
+
+    <!-- BOX ICON -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 
     <!-- BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -18,7 +27,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
-
     <!---Link Griffy Fonts---->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,10 +43,10 @@
     <link rel="stylesheet" href="index.css">
 </head>
 
-<body>
+<body >
 
     <!-----UNTUK NAVBAR----->
-    <nav class="navbar navbar-expand-lg" style="position: sticky; top: 0px; z-index: 2;">
+    <nav class="navbar navbar-expand-lg" id="fullNav" style="position: sticky; top: 0px; z-index: 2; ">
         <div class="container-fluid" style="padding: 2px 20px;">
             <a class="navbar-brand" style="margin-left: 20px; color: rgb(0, 0, 0); ">
                 F2k.<span style=" color: #FFC907;">Stream</span></a>
@@ -48,36 +56,46 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse custom-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0" >
+                    <li class="nav-item" >
+                        <a class="nav-link active" aria-current="page" href="#"  id="navText1" >Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="series.html">Series</a>
+                        <a class="nav-link" href="series.html"  id="navText2">Series</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="movies.html">Movies</a>
+                        <a class="nav-link" href="movies.html"  id="navText3">Movies</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="movies.html" data-bs-target="#modalForm"
-                            data-bs-toggle="modal">Premium+</a>
+                            data-bs-toggle="modal"  id="navText4">Premium+</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="movies.html" data-bs-target="#modalcontact"
-                            data-bs-toggle="modal">Contact Us</a>
+                            data-bs-toggle="modal" id="kontak" id="navText5">Contact Us</a>
                     </li>
 
                     
                 </ul>
+           
                 <form class="d-flex" role="search">
-                 
-                    <input class="form-control me-5 d-flex" type="search" placeholder="Search" aria-label="Search">
+                    <input class="form-control me-3 d-flex" type="search" placeholder="Search" aria-label="Search">
                     <div class="profile">
                         <img
                             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEg68sHsSj5uogEfKJdNaMDmazxADnahUz2hIhWpdSmS5VlsHiMQIkNRkWYl1QI6xxecw&usqp=CAU">
-                        <a>Fadel</a>
+                        <a id="profil" style="color: black;">Fadel</a>
                     </div>
                 </form>
+
+                <!-- <input type="checkbox" id="toggle" > -->
+               
+                    <!-- <button onclick="setDarkMode(true)" > DarkMode</button>
+                    <button  onclick="setDarkMode(false)"> LightMode</button> -->
+                 <i id="toggleDark" class='bi bi-brightness-high-fill'  style=" cursor: pointer;"></i>
+                 <!-- <i id="btnDark"class='bx bx-moon bx-tada ' onclick="setDarkMode(true)" style="cursor: pointer;" ></i>
+  -->
+  
+                
             </div>
 
         </div>
@@ -308,7 +326,7 @@
                     <div class="kontainer">
                         <video controls autoplay muted class="video" width="470px" style="border-radius: 15px;">
                             <source
-                                src="https://imdb-video.media-imdb.com/vi2427699993/1434659607842-pgv4ql-1631100525843.mp4?Expires=1678731868&Signature=skgGcKjZ6VOQ1Dug3HEK9hmUrh~nDEIlAHj5TozXkRXStZCehKzOgoXz4tUUdoFQ2loS2MOvCRy011fybqis~JngeA1eVr~8TRdSYJNVHVUcXaecPoQMQd6suYm04MDISpxnA44CqFLkzJcHoZqHy4-s97OW0KUwV5jiKZmA9~VEQDWkSvQaB7BoAY5kM1u50-WyaltsvYM6r98jls-y9J3vmuiqQ9WxZOqzCRDJhbY5tb8Z8NIGi~uk7z1UwFrARSgMP58hfPTGNm6-4bzGjDmMTVgL3c3Ik0goel8I2MsJ7CtnfVDi1GDZ5DLe7C6tCH7Oduy0aJcxQNFFihKoFQ__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA"
+                                src="https://imdb-video.media-imdb.com/vi2427699993/1434659607842-pgv4ql-1631100525843.mp4?Expires=1679899146&Signature=f9qQqektYx9ONipLa5SmDxrSaPqmgTln4w-BHRkohtBP1BONBAdbSs6y2mO596Wjm7cK9jrEe8u4wdbIQpdZBJ3OesiI8WkfqjGtPlqlXMqpDC2jDQpp2Mzse0Pj3awVCXAoBtUbfMC1hW-~g2vgo7R2hQh3u~bRWr1gQ4wvmvytt5sRIjpb1Wp2c8TgX0Iol0tUXlCqejDuNJbEK~Vi42fmZRC0nQqujjPnS4DtMR5Z8n5nTlqgbu1FK4aHobn44PDvXJl9IiljWWMyP~dZ9YgcG5bvr3VQrfD2ShSP~spnsnumHVs6R399ErV6HHkh~Jz64Jaeiiq64OuA6DiJ3g__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA"
                                 type="video/mp4">
                         </video>
                         <div class="genre">
@@ -1316,7 +1334,7 @@
                                         <option value="3">480p</option>
                                     </select>
 
-                                    <button type="submit" class="btn btn-primary"
+                                    <button id="buttonSubs" type="submit" class="btn btn-primary"
                                         style="margin-top: 20px; display: flex; margin-left: auto; margin-right: auto;">Submit</button>
                                 </div>
                             </div>
@@ -1352,7 +1370,7 @@
                                         <label for="exampleFormControlTextarea1" class="form-label" style="color: grey;">FeedBack</label>
                                         <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Write Your FeedBack Here" rows="3" style="height: 20%; margin-top: 0px;"></textarea>
                                       </div>
-                                      <button type="submit" class="btn btn-primary"
+                                      <button id="buttonSubmit" type="submit" class="btn btn-primary"
                                         style="margin-top: 20px; display: flex; margin-left: auto; margin-right: auto;">Submit</button>
                                 </div>
                             </form>
@@ -1435,7 +1453,7 @@
 
 
     <!-- Cards -->
-    <div class="fullcover">
+    <div class="fullcover" id="full">
         <h4 class="list">Favorite</h4>
         <div class="container">
             <div class="row">
@@ -1744,17 +1762,24 @@
             <div class="footer-content">
                 <h3> F2k.<span style=" color: #FFC907;">Stream</span></h3>
                 <p>F2k.Stream is a Online Streaming Movies designed by Fadel</p>
-                <ul class="socials">
-                    <li><a href="https://www.instagram.com/fadelmuhamadp/" target="_blank"><i class="fa-brands fa-instagram" ></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/fadel-muhamad-prianto-009480150/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
-                    <li><a href="https://twitter.com/fadelmuhamadp"target="_blank" ><i class="fa-brands fa-twitter"></i></i></a></li>
-
-                </ul>
+                <button id="toggle-show-hide"> Hit Me Up </button>
+                <div id="telp">
+               
+                </div>
+                <div class="socials" id="medsos"> 
+                    <!-- <p id="hit">Hit Me Up</p> -->
+                    <li><a href="https://www.instagram.com/fadelmuhamadp/" target="_blank"><i class="fa-brands fa-instagram"  ></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/fadel-muhamad-prianto-009480150/" target="_blank"><i class="fa-brands fa-linkedin" ></i></a></li>
+                    <li><a href="https://twitter.com/fadelmuhamadp"target="_blank" ><i class="fa-brands fa-twitter" ></i></i></a></li>
+                    </p>
             </div>
             <div class="footer-bottom">
                 <p>copyright &copy;2023 F2k. Designed by Fadel</p>
             </div>
+            </div>
         </footer>
+
+     
 
 
 

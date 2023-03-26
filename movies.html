@@ -1,44 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>F2k.Movies</title>
-     <!-- FavICon -->
-   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-
-    <!-- Font AWESOME -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-        crossorigin="anonymous"></script>
-
-    <!---Link Griffy Fonts---->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Griffy&family=Open+Sans:wght@700&family=Oswald&family=Poppins:wght@100;600&family=Ubuntu&family=Work+Sans:wght@500&display=swap"
-        rel="stylesheet">
-    <!------FONT MONTSERRAT----->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Griffy&family=Montserrat:wght@600;700&family=Open+Sans:wght@700&family=Oswald&family=Poppins:wght@100;600&family=Ubuntu&family=Work+Sans:wght@500&display=swap"
-        rel="stylesheet">
-
-    <!-- LINK CSS -->
-    <link rel="stylesheet" href="index.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>F2k.Movies</title>
+        <!-- FavICon -->
+       <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    
+        <!-- Font AWESOME -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+        <!-- Script -->
+        <script src="script.js" defer></script>
+    
+        <!-- BOX ICON -->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    
+        <!-- BOOTSTRAP -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+            crossorigin="anonymous"></script>
+        <!---Link Griffy Fonts---->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Griffy&family=Open+Sans:wght@700&family=Oswald&family=Poppins:wght@100;600&family=Ubuntu&family=Work+Sans:wght@500&display=swap"
+            rel="stylesheet">
+        <!------FONT MONTSERRAT----->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Griffy&family=Montserrat:wght@600;700&family=Open+Sans:wght@700&family=Oswald&family=Poppins:wght@100;600&family=Ubuntu&family=Work+Sans:wght@500&display=swap"
+            rel="stylesheet">
+        <!-- LINK CSS -->
+        <link rel="stylesheet" href="index.css">
+    </head>
+    
 
 <body>
 
     <!-----UNTUK NAVBAR----->
-    <nav class="navbar navbar-expand-lg" style="position: sticky; top: 0px; z-index: 2;">
+    <nav class="navbar navbar-expand-lg" id="fullNav" style="position: sticky; top: 0px; z-index: 2;">
         <div class="container-fluid" style="padding: 2px 20px;">
             <a class="navbar-brand" style="margin-left: 20px; color: rgb(0, 0, 0); ">
                 F2k.<span style=" color: #FFC907;">Stream</span></a>
@@ -78,6 +87,9 @@
                         <a>Fadel</a>
                     </div>
                 </form>
+
+                <i id="toggleDark" class='bi bi-brightness-high-fill'  style=" cursor: pointer;"></i>
+
             </div>
 
         </div>
@@ -815,7 +827,7 @@
 
 
     <!-- Cards -->
-    <div class="fullcover">\
+    <div class="fullcover">
 
         <h4 class="list">Most Watched</h4>
         <div class="container">

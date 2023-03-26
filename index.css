@@ -1,17 +1,16 @@
 * {
     font-family: 'Montserrat', sans-serif;
-
+    
 }
-
-/* NAVBAR */
-.navbar {
-    /* background: linear-gradient(90.53deg, rgba(0, 0, 0, 0.75) 0.45%, rgba(102, 80, 165, 0.75) 105.51%); */
-    /* background: linear-gradient(50.53deg, #1a1a1a 0.45%, rgba(193, 193, 197, 0.75) 80.51%,);  */
-    /* background: linear-gradient(90.53deg, rgba(0, 0, 0, 0.75) 0.45%, rgba(119, 119, 119, 0.75) 105.51%);   */
-    /* background-color: #1a1a1a; */
-    /* background: #1d1d2b; */
+/* body{
     background: linear-gradient(179.71deg, #273343 0.25%, #161E29 84.69%);
-}
+
+} */
+/* NAVBAR */
+/* .navbar {
+    background: linear-gradient(179.71deg, #273343 0.25%, #161E29 84.69%);
+   
+}  */
 
 a.navbar-brand,
 .navbar-brand>span {
@@ -49,6 +48,113 @@ me-5 {
     width: 45px;
 
 }
+
+
+/* DarKMODEEEE */
+
+/* #darkmode{
+   background: linear-gradient(179.71deg, #273343 0.25%, #161E29 84.69%); 
+   
+}
+
+#darkmode .navbar{
+    background: linear-gradient(179.71deg, #273343 0.25%, #161E29 84.69%); 
+ 
+ }
+ #darkmode .toggle i{
+     width: 50%;
+     display: flex;
+     text-align: center;
+     justify-content: center;
+     z-index: 1;
+ }
+
+ #light {
+     background: grey;
+ }
+
+ #light .navbar {
+    background: grey;
+
+ } */
+/* Light Mode */
+
+
+/* .toggle i {
+    width: 50%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    z-index: 1;
+} */
+/* .toggle .ball {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    margin: 6px 4.5px 0px 3.5px;
+    border-radius: 50%;
+}
+ */
+ #toggleDark  {
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  
+}
+ #toggleDark nav {
+    background: linear-gradient(179.71deg, #273343 0.25%, #161E29 84.69%);
+    position: sticky;
+    top: 0px;
+    
+  
+} 
+
+
+
+
+/* dark Mode */
+/* .light{
+    overflow-x: hidden;
+    background: linear-gradient(179.71deg, #273343 0.25%, #161E29 84.69%);
+
+}
+.light .toggle {
+    background: #151d2a;
+    box-shadow: 3px 3px 4px #0e131b,
+                -4px 0px 5px #1c2739;
+
+  
+} 
+.toggle{
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    display: flex;
+}
+.toggle i {
+    width: 50%;
+    display: flex;
+    line-height: 50px;
+    justify-content: center;
+    text-align: center;
+    font-size: 25px;
+    z-index: 1;
+}  */
+/* .toggle .ball {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    margin: 6px 4.5px 0px 3.5px;
+    border-radius: 50%;
+}
+
+
 
 
 /* UNTUK CAROUSEL */
@@ -97,12 +203,7 @@ me-5 {
 
 /* Untuk cards */
 .fullcover {
-    /* background: linear-gradient(90.53deg, rgba(0, 0, 0, 0.75) 0.45%, rgba(102, 80, 165, 0.75) 105.51%);  */
-    /* background: linear-gradient(90.53deg, rgba(0, 0, 0, 0.75) 0.45%, rgba(119, 119, 119, 0.75) 105.51%);
-    /* background-color: #1a1a1a; */
-    /* background: linear-gradient(90.53deg, rgba(0, 0, 0, 0.75) 0.45%, rgba(193, 193, 197, 0.75) 105.51%);  */
-    /* background-color: #152951; */ 
-    background: linear-gradient(179.71deg, #273343 0.25%, #161E29 84.69%);
+    /* background: linear-gradient(179.71deg, #273343 0.25%, #161E29 84.69%); */
     padding-top: 30px;
 }
 .bread{
@@ -391,8 +492,22 @@ me-5 {
     align-items: center;
     justify-content: center;
     margin: 1rem 0 3rem 0;
+   
+}
+#linkme {
+    display: flex;
 }
 
+#toggle-show-hide{
+    border: 2px solid ;
+    width: 100px;
+    height: 50px;
+
+  
+}
+#toggle-show-hide:hover{
+    background-color: #FFC907;
+}
 .socials li {
     margin: 0 10px;
 
@@ -446,13 +561,34 @@ me-5 {
         padding: 40% 0 0 6%;
 
     }
+    .form-control{
 
+    height: 5vh;
+    margin-top: 4.5%;
+
+}
+
+  
     .card-title {
         font-size: 17px;
     }
+    /* .toggle{
+        cursor: pointer;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        width: 50px;
+        height:  50px;
+        border-radius: 50px;
+    } */
 }
 
+@media screen and (max-width: 1075px) {
+    #kontak {
+        display: none;
+    }
 
+}
 
 @media screen and (max-width: 992px) {
     .nav-link.active {
@@ -460,7 +596,7 @@ me-5 {
     }
 
     .nav-item a {
-        color: aliceblue;
+        color: black;
     }
 
     .profile {
@@ -480,6 +616,11 @@ me-5 {
 
     .highlight-1 {
         background-position: right;
+    }
+
+    #toggleDark {
+        margin-top: 10px;
+        justify-content: start;
     }
 }
 
@@ -580,6 +721,7 @@ me-5 {
     .col-4 img{
         justify-content: space-between;
     }
+    
 }
 
 
